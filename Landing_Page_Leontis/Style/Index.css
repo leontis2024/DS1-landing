@@ -1,0 +1,209 @@
+.assunto {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Início */
+
+#inicio {
+    background-color: #F5E0D4;
+}
+
+.titulo {
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 20px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    left: 7vw;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#entrar {
+    width: 30vw;
+    height: fit-content;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: 120px;
+    left: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#entrar > h2 {
+    font-size: 20px;
+}
+
+#cadastro {
+    width: 60%;
+    height: 7vh;
+    font-size: 24px;
+    color: white;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: #7C3939;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 3vh 0;
+}
+
+#cadastro:hover {
+    transform: scale(1.02);
+}
+
+#cadastro:active {
+    transform: scale(1);
+}
+
+#login {
+    text-decoration: none;
+    transition: 0.5s;
+    color: #7C3939;
+    transform: scale(1.1);
+}
+
+#ilustracao1 {
+    height: 500px;
+    width: 500px;
+    float: right;
+    position: relative;
+    top: 80px;
+    right: 250px;
+}
+
+#ilustracao1 > #img {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: black 5px 5px 15px 0px;
+    transition: 0.5s;
+}
+
+#ilustracao1 > #img:hover {
+    transform: scale(1.01);
+}
+
+#ilustracao1 > #img:nth-child(1) {
+    height: 400px;
+    left: 50px;
+}
+
+#ilustracao1 > #img:nth-child(2) {
+    height: 300px;
+    top: -250px;
+    left: 220px;
+}
+
+#ilustracao1 > #img:nth-child(3) {
+    height: 200px;
+    top: -415px;
+}
+
+/* Sobre o App */
+
+#sobreApp {
+    background-color: #EEB08C;
+}
+
+#carrossel {
+    display: block;
+    height: 600px;
+    width: 270px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.funcao {
+    margin: auto;
+    height: 600px;
+    width: 270px;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#carrossel li {
+    list-style: none;
+    position: absolute;
+}
+
+#carrossel input {
+    display: none;
+}
+
+#navegacaoCarrossel {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: 150px;
+    right: 200px;
+}
+
+#navegacaoCarrossel > label:hover {
+    right: 10px;
+}
+
+.opcaoFunc {
+    background-color: #7C3939;
+    color: #F5E0D4;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    margin: 5px;
+    padding: 0px 20px;
+} 
+
+#carrossel li:nth-child(1) label {
+    left: 10px;
+}
+
+#carrossel li:nth-child(2) label {
+    left: 40px;
+}
+
+#carrossel li:nth-child(3) label {
+    left: 70px;
+}
+
+#carrossel li input:checked ~ .funcao { 
+    opacity: 1; 
+    visibility: visible; 
+    z-index: 10; 
+} 
+
+/*Sobre a Empresa */
+
+#sobreEmp {
+    background-color: whitesmoke;
+}
+
+#emp {
+    color:rgb(40, 238, 50);
+    left: 10rem;
+}
+
+#info {
+    width: 30vw;
+    height: fit-content;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    top: 120px;
+    left: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info > h2 {
+    margin-top: 5vh;
+    color: rgb(40, 238, 50);
+    font-weight: 600;
+}

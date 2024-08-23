@@ -1,0 +1,63 @@
+@font-face {
+    font-family: quicksand;
+    src: url(../Resources/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: quicksand;
+    font-weight: 500;
+    margin: 0%;
+    padding: 0%;
+}
+
+#navbar {
+    width: 100vw;
+    height: 9%;
+    background-color: #7C3939;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: black 0px 0px 10px 3px;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#leon {
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+#links {
+    width: 60vw;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#links > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    padding: 0% 2%;
+    font-size: 25px;
+    text-decoration: none;
+    color: #F5E0D4;
+    border-radius: 0px 0px 15px 15px;
+    transition: 0.5s;
+}
+
+#links > a:hover {
+    color: #7C3939;
+    background-color: #F5E0D4;
+    box-shadow: black 0px 0px 12px 0px;
+    transform: scale(1.03);
+}
