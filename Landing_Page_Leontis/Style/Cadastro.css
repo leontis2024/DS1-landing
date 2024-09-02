@@ -1,0 +1,93 @@
+/* Pagina Cadastro */
+
+.assunto {
+    width: 100vw;
+    height: 100vh;
+}
+
+#cadastro{
+    background: rgb(245,224,212);
+    background: linear-gradient(90deg, rgba(245,224,212,1) 30%, rgba(238,176,140,1) 100%);
+}
+
+#leontis{
+    height: 15vh;
+    width: 8vw;
+}
+
+.cadastrar{
+    height: 80vh;
+    width: 35vw;
+    top: 80px;
+    background-color: #7C3939;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 3px;
+    display: flex;
+    position: relative;
+    margin: auto;
+}
+
+#titulo{
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 20px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+    left: 5vw;
+    font-size: 65px;
+    font-weight: 600;
+    color:#F5E0D4
+}
+
+label{
+    display: flex;
+    text-align: right;
+    padding-right: 10px;
+    color: #F5E0D4;
+}
+
+input{
+    border-radius: 5px;
+    height: 35px;
+    border: solid 2px black;
+    padding: 0px 20px;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+#perguntas {
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 20px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 125px;
+    right: 14vw;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#enviar{
+    width: 380px;
+    background-color: #F5E0D4;
+    color: #7C3939;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+img{
+    position: relative;
+    left: 12vw;
+    top: -6vw;
+}
+
+/* #email:{
+    border:1px black solid;
+} */
