@@ -206,3 +206,24 @@
     color: rgb(40, 238, 50);
     font-weight: 600;
 }
+
+/* Nossos Contatos */
+
+#nossosCont{
+    width: 100vw;
+    height: 25vh;
+    background-color: #202933;
+}
+
+#nossosCont > img{
+    height: 15vh;
+    width: 8vw;
+    position: relative;
+    display: flex;
+}
+
+#nossosCont > h2{
+    color: #F5E0D4;
+    position: relative;
+    display: flex;
+}
