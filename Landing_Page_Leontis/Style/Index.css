@@ -108,7 +108,7 @@
 #tituloApp {
     width: fit-content;
     position: relative;
-    top: 100px;
+    top: 85px;
     left: 90px;
     font-size: 50px;
     font-weight: 600;
@@ -116,19 +116,32 @@
 
 #funcionalidades {
     width: 100vw;
-    height: 500px;
+    height: fit-content;
     position: relative;
-    top: 100px;
+    top: 60px;
+    padding: 22px 0px;
     overflow-y: auto;
     white-space: nowrap;
 }
 
+#funcionalidades ::-webkit-scrollbar {
+    display: none;
+}
+
 .funcao {
     width: 450px;
-    height: 100px;
+    height: 550px;
+    margin: 0px 20px;
     background-color: #7C3939;
+    box-shadow: 0px 0px 10px 0px black;
+    border-radius: 30px;
     display: inline-block;
-    margin: 0px 15px;
+    transition: 0.5s;
+}
+
+.funcao:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 15px 0px;
 }
 
 /*Sobre a Empresa */
