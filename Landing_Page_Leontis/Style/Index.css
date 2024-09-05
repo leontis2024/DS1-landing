@@ -105,6 +105,32 @@
     background-color: #EEB08C;
 }
 
+#tituloApp {
+    width: fit-content;
+    position: relative;
+    top: 100px;
+    left: 90px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#funcionalidades {
+    width: 100vw;
+    height: 500px;
+    position: relative;
+    top: 100px;
+    overflow-y: auto;
+    white-space: nowrap;
+}
+
+.funcao {
+    width: 450px;
+    height: 100px;
+    background-color: #7C3939;
+    display: inline-block;
+    margin: 0px 15px;
+}
+
 /*Sobre a Empresa */
 
 #sobreEmp {
