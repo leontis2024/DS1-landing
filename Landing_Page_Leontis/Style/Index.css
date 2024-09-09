@@ -108,7 +108,7 @@
 #tituloApp {
     width: fit-content;
     position: relative;
-    top: 85px;
+    top: 100px;
     left: 90px;
     font-size: 50px;
     font-weight: 600;
@@ -118,9 +118,9 @@
     width: 100vw;
     height: fit-content;
     position: relative;
-    top: 60px;
-    padding: 22px 0px;
-    overflow-y: auto;
+    top: 80px;
+    padding: 20px 0px;
+    overflow: auto;
     white-space: nowrap;
 }
 
@@ -129,11 +129,12 @@
 }
 
 .funcao {
-    width: 450px;
-    height: 550px;
+    width: 400px;
+    height: 500px;
     margin: 0px 20px;
-    background-color: #7C3939;
-    box-shadow: 0px 0px 10px 0px black;
+    background-color: #EEB08C;
+    box-shadow: 0px 0px 10px 0px #7C3939;
+    border: 2px solid #7C3939;
     border-radius: 30px;
     display: inline-block;
     transition: 0.5s;
@@ -141,7 +142,7 @@
 
 .funcao:hover {
     transform: scale(1.01);
-    box-shadow: 0px 0px 15px 0px;
+    box-shadow: 0px 0px 15px 0px #7C3939;
 }
 
 /*Sobre a Empresa */

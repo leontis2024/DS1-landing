@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="Style/Style.css">
+    <link rel="stylesheet" href="Style/cadastro.css">
+    <link rel="shortcut icon" href="Resources/leon.png" type="image/jpg">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="Index.html"><img src="Resources/leon.png" id="leon"></a>
+
+        <div id="links">
+            <a href="#sobreApp">Sobre o App</a>
+            <a href="#sobreEmp">Sobre a Empresa</a>
+            <a href="#">Nossos Contatos</a>
+        </div>
+    </nav>
+
+    <div class="assunto" id="cadastro">
+        <h1 id="titulo">Leontis <img src="Resources/leonDark.png" id="leontis"></h1>
+
+        <div class="cadastrar"> 
+            <form>
+                <h2 id="titCadastro">Cadastro de Empresa:</h2>
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite o e-mail da empresa" required>
+                <br><br>
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" placeholder="## #####-####">
+                <br><br>
+                <label for="pwd">Senha:</label>
+                <input type="password" name="pwd" id="pwd" placeholder="Digite uma senha válida" required>
+                <br><br>
+                <label for="confPwd">Confirmar Senha:</label>
+                <input type="password" name="confPwd" id="confPwd" placeholder="Confirme sua senha" required>
+                <br><br>
+                <label for="nomeEmp">Digite o nome da empresa:</label>
+                <input type="text" name="nomeEmp" id="nomeEmp" placeholder="Digite como os outros vão te chamar" required>
+                <br><br>
+                <label for="cnpj">CNPJ:</label>
+                <input type="text" name="cnpj" id="cnpj" placeholder="##.###.###/####-##" required>
+                <br><br>
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
