@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     border-radius: 0px 0px 15px 15px;
-    box-shadow: black 0px 0px 10px 3px;
+    box-shadow: 0px 0px 10px 3px black;
     z-index: 100;
     transition: 0.5s;
 }
@@ -62,6 +62,6 @@
 #links > a:hover {
     color: #7C3939;
     background-color: #F5E0D4;
-    box-shadow: black 0px 0px 12px 0px;
+    box-shadow: 0px 0px 12px 0px black;
     transform: scale(1.03);
 }

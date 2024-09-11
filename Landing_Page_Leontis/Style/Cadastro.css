@@ -24,23 +24,28 @@ body {
     width: 90px;
 }
 
-.cadastrar {
-    width: 700px;
-    height: fit-content;
+.formulario {
     position: relative;
-    top: 150px;
+    margin: 150px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
-    padding: 30px 0px;
+    width: 700px;
     background-color: #7C3939;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 3px;
+    box-shadow: 0px 0px 10px 3px black;
 }
 
-.cadastrar::-webkit-scrollbar {
+.formulario::-webkit-scrollbar {
     display: none;
+}
+
+.formulario > form {
+    width: 480px;
+}
+
+#submit {
+    margin: 30px 0px;
 }
 
 #titCadastro {
@@ -60,13 +65,9 @@ label {
 
 input {
     border-radius: 5px;
-    width: 450px;
+    width: 480px;
     height: 35px;
     border: solid 2px black;
-    padding: 0px 20px;
-}
-
-#submit {
 }
 
 #enviar {
@@ -77,7 +78,3 @@ input {
     cursor: pointer;
     margin-top: 20px;
 }
-
-/* #email:{
-    border:1px black solid;
-} */
