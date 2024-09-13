@@ -41,11 +41,38 @@ body {
 }
 
 .formulario > form {
+    width: fit-content;
+}
+
+#finalizar {
     width: 480px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 50px;
 }
 
 #submit {
-    margin: 30px 0px;
+    width: 260px;
+    height: 45px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #F5E0D4;
+    color: #7C3939;
+    transition: 0.5s;
+}
+
+#submit:hover {
+    transform: scale(1.05);
+    font-size: 21px;
+}
+
+#submit:active {
+    transform: scale(1);
+}
+
+#submit:hover {
+    cursor: pointer;
 }
 
 #titCadastro {
@@ -55,26 +82,16 @@ body {
 }
 
 label {
-    display: flex;
-    text-align: right;
+    width: fit-content;
     font-size: 20px;
-    padding-right: 10px;
     color: #F5E0D4;
-    margin-bottom: 10px;
 }
 
 input {
-    border-radius: 5px;
-    width: 480px;
     height: 35px;
+    margin-bottom: 30px;
+    padding: 0px 10px;
+    font-size: 16px;
     border: solid 2px black;
-}
-
-#enviar {
-    width: 380px;
-    background-color: #F5E0D4;
-    color: #7C3939;
-    font-weight: 700;
-    cursor: pointer;
-    margin-top: 20px;
+    border-radius: 5px;
 }

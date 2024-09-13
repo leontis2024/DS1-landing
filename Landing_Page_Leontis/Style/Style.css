@@ -35,15 +35,22 @@
 #leon {
     width: 70px;
     height: 70px;
-    margin-left: 10px;
+    position: absolute;
+    left: 10px;
+}
+
+#leon > img {
+    width: 70px;
+    height: 70px;
 }
 
 #links {
     width: 60vw;
     position: relative;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 #links > a {
