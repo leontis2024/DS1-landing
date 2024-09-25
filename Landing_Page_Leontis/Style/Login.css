@@ -1,56 +1,50 @@
-/* Pagina Cadastro */
-
 body {
     background: linear-gradient(90deg, rgba(245,224,212,1) 30%, rgba(238,176,140,1) 100%);
 }
 
-#titulo {
-    width: fit-content;
-    height: fit-content;
+#login {
     position: relative;
-    top: 110px;
     margin: auto;
+    top: 180px;
+    width: fit-content;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    font-size: 65px;
-    font-weight: 600;
-    color: #282525;
-    cursor: default;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px black;
+    background-color: #7C3939;
 }
 
-#leontis {
-    height: 90px;
-    width: 90px;
+#box {
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 10px 0px 0px 10px;
 }
 
 #formulario {
-    margin: 150px auto;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 700px;
-    background-color: #7C3939;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 3px black;
+    border-radius: 0px 10px 10px 0px;
 }
 
 .formulario > form {
     width: fit-content;
 }
 
-#titCadastro {
+#titLogin {
+    position: relative;
+    top: 20px;
+    left: 20px;
     font-size: 40px;
     color: #F5E0D4;
-    margin: 30px 0px;
+    margin-bottom: 30px;
 }
 
 #finalizar {
     width: 480px;
     display: flex;
     justify-content: center;
-    margin: 20px 0px 50px;
+    margin-top: 60px;
 }
 
 #submit {
@@ -75,13 +69,16 @@ body {
 }
 
 label {
+    display: inline-block;
     width: fit-content;
-    font-size: 20px;
+    font-size: 22px;
     color: #F5E0D4;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
 
 input {
-    height: 35px;
+    height: 45px;
     margin-bottom: 30px;
     padding: 0px 10px;
     font-size: 16px;

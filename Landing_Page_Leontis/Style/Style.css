@@ -3,6 +3,10 @@
     src: url(../Resources/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 
+body {
+    background-color: #F5E0D4;
+}
+
 * {
     font-family: quicksand;
     font-weight: 500;
@@ -60,6 +64,7 @@
     height: 70px;
     padding: 0% 2%;
     font-size: 25px;
+    text-align: center;
     text-decoration: none;
     color: #F5E0D4;
     border-radius: 0px 0px 15px 15px;
