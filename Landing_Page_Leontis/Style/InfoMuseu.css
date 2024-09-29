@@ -1,0 +1,51 @@
+#museu {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#infoMuseu {
+    width: 50vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8vh;
+    margin: 12vh 0;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#infoMuseu::-webkit-scrollbar {
+    display: none;
+}
+
+#infoMuseu > p, h1 {
+    white-space: wrap;
+}
+
+#nomeMuseu {
+    width: 40vw;
+    font-size: 50px;
+}
+
+#descMuseu {
+    white-space: wrap;
+    width: 40vw;
+    font-size: 20px;
+}
+
+#rua {
+    width: 40vw;
+    font-size: 20px;
+}
+
+#estadoCidade {
+    width: 40vw;
+    font-size: 20px;
+}
+
+#fotoMuseu {
+    width: 50vw;
+    height: 100vh;
+}
