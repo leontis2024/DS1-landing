@@ -113,7 +113,7 @@
 }
 
 #funcionalidades {
-    width: 100vw;
+    width: 1536px;
     height: fit-content;
     position: relative;
     top: 80px;
@@ -184,8 +184,8 @@
 }
 
 #imgFooter{
-    height: 15vh;
-    width: 8vw;
+    height: 116.55px;
+    width: 122.88px;
 }
 
 .linkIntegrantes>a{
