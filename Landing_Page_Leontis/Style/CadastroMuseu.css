@@ -1,0 +1,63 @@
+/* Pagina Cadastro */
+
+body {
+    background: linear-gradient(90deg, rgba(245,224,212,1) 30%, rgba(238,176,140,1) 100%);
+}
+
+#titulo {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    top: 110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-size: 65px;
+    font-weight: 600;
+    color: #282525;
+    cursor: default;
+}
+
+#leontis {
+    height: 90px;
+    width: 90px;
+}
+
+#diasFunc {
+    display: grid;
+    
+}
+
+.func {
+    display: none;
+}
+
+#dom:checked ~ #funcDom {
+    display: inline-block;
+}
+
+#seg:checked ~ #funcSeg {
+    display: inline-block;
+}
+
+#ter:checked ~ #funcTer {
+    display: inline-block;
+}
+
+#qua:checked ~ #funcQua {
+    display: inline-block;
+}
+
+#qui:checked ~ #funcQui {
+    display: inline-block;
+}
+
+#sex:checked ~ #funcSex {
+    display: inline-block;
+}
+
+#sab:checked ~ #funcSab {
+    display: inline-block;
+}
