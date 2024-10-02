@@ -57,15 +57,15 @@
             <label for="image">imagem</label><br>
             <input type="file" name="image" id="image"><br>
 
-            <p>dias de funcionamento</p>
+            <p>dias de funcionamento:</p>
             <div id="diasFunc">
-                <input type="checkbox" name="dom" id="dom"><label for="dom">domingo</label>
-                <input type="checkbox" name="seg" id="seg"><label for="seg">segunda</label>
-                <input type="checkbox" name="ter" id="ter"><label for="ter">terça</label>
-                <input type="checkbox" name="qua" id="qua"><label for="qua">quarta</label>
-                <input type="checkbox" name="qui" id="qui"><label for="qui">quinta</label>
-                <input type="checkbox" name="sex" id="sex"><label for="sex">sexta</label>
-                <input type="checkbox" name="sab" id="sab"><label for="sab">sábado</label>
+                <div class="dia"> <input type="checkbox" name="dom" id="dom"> <label for="dom">domingo</label> </div>
+                <div class="dia"> <input type="checkbox" name="seg" id="seg"> <label for="seg">segunda</label> </div>
+                <div class="dia"> <input type="checkbox" name="ter" id="ter"> <label for="ter">terça</label> </div>
+                <div class="dia"> <input type="checkbox" name="qua" id="qua"> <label for="qua">quarta</label> </div>
+                <div class="dia"> <input type="checkbox" name="qui" id="qui"> <label for="qui">quinta</label> </div>
+                <div class="dia"> <input type="checkbox" name="sex" id="sex"> <label for="sex">sexta</label> </div>
+                <div class="dia"> <input type="checkbox" name="sab" id="sab"> <label for="sab">sábado</label> </div>
 
                 <div id="funcDom" class="func">
                     <input type="time" name="inicioSeg" id="inicioDom" class="hrFunc">
@@ -92,7 +92,6 @@
                     <input type="time" name="fimSeg" id="fimSex" class="hrFunc">
                 </div>
                 <div id="funcSab" class="func">
-                    <h2>sábado:</h2>
                     <input type="time" name="inicioSeg" id="inicioSab" class="hrFunc">
                     <input type="time" name="fimSeg" id="fimSab" class="hrFunc">
                 </div>

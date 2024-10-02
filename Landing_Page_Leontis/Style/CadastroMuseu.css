@@ -25,9 +25,13 @@ body {
     width: 90px;
 }
 
+.dia {
+    display: flex;
+    gap: 10px;
+}
+
 #diasFunc {
     display: grid;
-    
 }
 
 .func {
