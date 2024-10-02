@@ -3,6 +3,10 @@
     src: url(../Resources/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #F5E0D4;
 }
