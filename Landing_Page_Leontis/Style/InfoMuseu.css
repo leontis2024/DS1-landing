@@ -1,17 +1,17 @@
 #museu {
-    width: 100vw;
-    height: 100vh;
+    width: 1536px;
+    height: 777px;
     display: flex;
 }
 
 #infoMuseu {
-    width: 50vw;
-    height: 85vh;
+    width: 768px;
+    height: 621.6px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8vh;
-    margin: 12vh 0;
+    gap: 50px;
+    margin-top: 93.24px;
     overflow-x: auto;
     white-space: nowrap;
 }
@@ -20,32 +20,83 @@
     display: none;
 }
 
-#infoMuseu > p, h1 {
+#infoMuseu > p, h1, div {
     white-space: wrap;
 }
 
 #nomeMuseu {
-    width: 40vw;
+    width: 614.4px;
     font-size: 50px;
 }
 
-#descMuseu {
-    white-space: wrap;
-    width: 40vw;
+#descMuseu, #rua, #estadoCidade {
+    width: 614.4px;
     font-size: 20px;
 }
 
-#rua {
-    width: 40vw;
-    font-size: 20px;
+#diasFunc {
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "titulo titulo titulo titulo"
+    "dia abertura fechamento ingresso"
+    "fechado fechado fechado fechado";
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
 }
 
-#estadoCidade {
-    width: 40vw;
+#titDiasFunc {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.subtit {
     font-size: 20px;
+    font-weight: 600;
+}
+
+#titDiasFunc, .dia, .abertura, .fechamento, .valorIngresso, #fechado {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.dia {
+    grid-area: dia;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.abertura {
+    grid-area: abertura;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.fechamento {
+    grid-area: fechamento;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.valorIngresso {
+    grid-area: ingresso;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#fechado {
+    grid-area: fechado;
 }
 
 #fotoMuseu {
-    width: 50vw;
-    height: 100vh;
+    width: 768px;
+    height: 777px;
 }

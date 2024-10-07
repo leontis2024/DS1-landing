@@ -1,0 +1,53 @@
+body {
+    background: linear-gradient(90deg, rgba(245,224,212,1) 30%, rgba(238,176,140,1) 100%);
+}
+
+#titulo {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    top: 12vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    font-size: 50px;
+    font-weight: 600;
+    color: #282525;
+    cursor: default;
+}
+
+#guias {
+    width: 100vw;
+    position: relative;
+    top: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.guia {
+    width: 700px;
+    height: 100px;
+    background-color: #EEB08C;
+    border: 2px solid #282525;
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.guia:hover {
+    transform: scale(1.05);
+}
+
+.guia:active {
+    transform: scale(1);
+}
+
+#nomeGuia {
+    font-size: 30px;
+    font-weight: 600;
+}

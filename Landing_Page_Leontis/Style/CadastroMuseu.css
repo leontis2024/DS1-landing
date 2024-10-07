@@ -1,67 +1,104 @@
-/* Pagina Cadastro */
-
 body {
     background: linear-gradient(90deg, rgba(245,224,212,1) 30%, rgba(238,176,140,1) 100%);
 }
 
-#titulo {
-    width: fit-content;
-    height: fit-content;
+#formulario {
+    height: 80vh;
     position: relative;
-    top: 110px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    font-size: 65px;
-    font-weight: 600;
-    color: #282525;
-    cursor: default;
-}
-
-#leontis {
-    height: 90px;
-    width: 90px;
-}
-
-.dia {
-    display: flex;
-    gap: 10px;
-}
-
-#diasFunc {
+    top: 12vh;
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2vw;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 1vh;
+    grid-template-areas:
+    "titulo titulo titulo titulo"
+    "nome inauguracao tel ftMuseu"
+    "desc desc rua estado"
+    "cidade cnpj cep pontoRef"
+    "finalizar finalizar finalizar finalizar";
+    margin: 0px 4vw;
 }
 
-.func {
-    display: none;
+label {
+    font-size: 20px;
 }
 
-#dom:checked ~ #funcDom {
-    display: inline-block;
+input, textarea {
+    font-size: 16px;
+    padding: 1px 3px;
 }
 
-#seg:checked ~ #funcSeg {
-    display: inline-block;
+#titCadastro {
+    font-size: 50px;
+    font-weight: 600;
+    grid-area: titulo;
 }
 
-#ter:checked ~ #funcTer {
-    display: inline-block;
+#nome {
+    grid-area: nome;
 }
 
-#qua:checked ~ #funcQua {
-    display: inline-block;
+#inauguracao {
+    grid-area: inauguracao;
 }
 
-#qui:checked ~ #funcQui {
-    display: inline-block;
+#tel {
+    grid-area: tel;
 }
 
-#sex:checked ~ #funcSex {
-    display: inline-block;
+#desc {
+    grid-area: desc;
 }
 
-#sab:checked ~ #funcSab {
-    display: inline-block;
+#descricao {
+    resize: vertical;
+}
+
+#rua {
+    grid-area: rua;
+}
+
+#estado {
+    grid-area: estado;
+}
+
+#cidade {
+    grid-area: cidade;
+}
+
+#pontoRef {
+    grid-area: pontoRef;
+}
+
+#cnpj {
+    grid-area: cnpj;
+}
+
+#cep {
+    grid-area: cep;
+}
+
+#ftMuseu {
+    grid-area: ftMuseu;
+}
+
+#finalizar {
+    text-align: center;
+    grid-area: finalizar;
+}
+
+.botao {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #EEB08C;
+    color: #282525;
+    border: 2px solid #282525;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+#nome, #inauguracao, #tel, #desc, #rua, #estado, #cidade, #pontoRef, #cnpj, #cep, #ftMuseu {
+    display: flex;
+    flex-direction: column;
 }

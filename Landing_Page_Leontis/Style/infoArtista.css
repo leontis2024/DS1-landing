@@ -1,0 +1,40 @@
+#artista {
+    width: 1536px;
+    height: 777px;
+    display: flex;
+}
+
+#infoArtista {
+    width: 768px;
+    height: 621.6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 93.24px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#infoArtista::-webkit-scrollbar {
+    display: none;
+}
+
+#infoArtista > p, h1, div {
+    white-space: wrap;
+}
+
+#nomeArtista {
+    width: 614.4px;
+    font-size: 50px;
+}
+
+#descArtista, #nascimento, #morte {
+    width: 614.4px;
+    font-size: 20px;
+}
+
+#fotoArtista {
+    width: 768px;
+    height: 777px;
+}

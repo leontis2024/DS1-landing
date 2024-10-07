@@ -41,7 +41,7 @@ body {
 }
 
 #finalizar {
-    width: 480px;
+    width: 440px;
     display: flex;
     justify-content: center;
     margin-top: 60px;
@@ -78,10 +78,11 @@ label {
 }
 
 input {
+    width: 400px;
     height: 45px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding: 0px 10px;
     font-size: 16px;
     border: solid 2px black;
     border-radius: 5px;
-}
+}   

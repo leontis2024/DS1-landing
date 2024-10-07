@@ -1,0 +1,40 @@
+#obra {
+    width: 1536px;
+    height: 777px;
+    display: flex;
+}
+
+#infoObra {
+    width: 768px;
+    height: 621.6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 93.24px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#infoObra::-webkit-scrollbar {
+    display: none;
+}
+
+#infoObra > p, h1, div {
+    white-space: wrap;
+}
+
+#nomeObra {
+    width: 614.4px;
+    font-size: 50px;
+}
+
+#descObra, #autor, #dtInicio, #dtFim, #genero, #localObra {
+    width: 614.4px;
+    font-size: 20px;
+}
+
+#fotoObra {
+    width: 768px;
+    height: 777px;
+}

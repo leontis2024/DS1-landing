@@ -18,89 +18,59 @@
         </div>
     </nav>
 
-    <h1 id="titulo">Leontis <img src="Resources/leonDark.png" id="leontis"></h1>
-
-    <div id="formulario"> 
-        <form>
+    <form>
+        <div id="formulario">
             <h2 id="titCadastro">Cadastro de Museu:</h2>
-
-            <label for="nome">nome do Museu:</label><br>
-            <input type="text" name="nomeEmp" id="nomeEmp" placeholder="Digite como os outros vão te chamar" size="45" required><br>
-
-            <label for="desc">descrição</label><br>
-            <textarea name="desc" id="desc" cols="60" rows="5"></textarea><br>
-
-            <label for="rua">Rua</label><br>
-            <input type="text" name="rua" id="rua" required><br>
-
-            <label for="estado">estado</label><br>
-            <input type="text" name="estado" id="estado" required><br>
-
-            <label for="cidade">cidade</label><br>
-            <input type="text" name="cidade" id="cidade" required><br>
-
-            <label for="pontoRef">ponto ref</label><br>
-            <input type="text" name="pontoRef" id="pontoRef"><br>
-
-            <label for="cnpj">cnpj</label><br>
-            <input type="text" name="cnpj" id="cnpj" required><br>
-
-            <label for="cep">cep</label><br>
-            <input type="text" name="cep" id="cep" required><br>
-
-            <label for="dtInauguracao">inauguração</label><br>
-            <input type="date" name="dtInauguracao" id="dtInauguracao" required><br>
-
-            <label for="tel">telefone</label><br>
-            <input type="tel" name="tel" id="tel"><br>
-
-            <label for="image">imagem</label><br>
-            <input type="file" name="image" id="image"><br>
-
-            <p>dias de funcionamento:</p>
-            <div id="diasFunc">
-                <div class="dia"> <input type="checkbox" name="dom" id="dom"> <label for="dom">domingo</label> </div>
-                <div class="dia"> <input type="checkbox" name="seg" id="seg"> <label for="seg">segunda</label> </div>
-                <div class="dia"> <input type="checkbox" name="ter" id="ter"> <label for="ter">terça</label> </div>
-                <div class="dia"> <input type="checkbox" name="qua" id="qua"> <label for="qua">quarta</label> </div>
-                <div class="dia"> <input type="checkbox" name="qui" id="qui"> <label for="qui">quinta</label> </div>
-                <div class="dia"> <input type="checkbox" name="sex" id="sex"> <label for="sex">sexta</label> </div>
-                <div class="dia"> <input type="checkbox" name="sab" id="sab"> <label for="sab">sábado</label> </div>
-
-                <div id="funcDom" class="func">
-                    <input type="time" name="inicioSeg" id="inicioDom" class="hrFunc">
-                    <input type="time" name="fimSeg" id="fimDom" class="hrFunc">
-                </div>
-                <div id="funcSeg" class="func">
-                    <input type="time" name="inicioSeg" id="inicioSeg" class="hrFunc">
-                    <input type="time" name="fimSeg" id="fimSeg" class="hrFunc">
-                </div>
-                <div id="funcTer" class="func">
-                    <input type="time" name="inicioSeg" id="inicioTer" class="hrFunc">
-                    <input type="time" name="fimSeg" id="fimTer" class="hrFunc">
-                </div>
-                <div id="funcQua" class="func">
-                    <input type="time" name="inicioSeg" id="inicioQua" class="hrFunc">
-                    <input type="time" name="fimSeg" id="fimQua" class="hrFunc">
-                </div>
-                <div id="funcQui" class="func">
-                    <input type="time" name="inicioSeg" id="inicioQui" class="hrFunc">
-                    <input type="time" name="fimSeg" id="fimQui" class="hrFunc">
-                </div>
-                <div id="funcSex" class="func">
-                    <input type="time" name="inicioSeg" id="inicioSex" class="hrFunc">
-                    <input type="time" name="fimSeg" id="fimSex" class="hrFunc">
-                </div>
-                <div id="funcSab" class="func">
-                    <input type="time" name="inicioSeg" id="inicioSab" class="hrFunc">
-                    <input type="time" name="fimSeg" id="fimSab" class="hrFunc">
-                </div>
+            <div id="nome">
+                <label for="nome">nome do Museu:</label>
+                <input type="text" name="nomeMuseu" id="nomeMuseu" placeholder="Digite como os outros vão te chamar" size="45" required>
             </div>
+            <div id="inauguracao">
+                <label for="dtInauguracao">Inauguração:</label>
+                <input type="date" name="dtInauguracao" id="dtInauguracao" required>
+            </div>
+            <div id="tel">
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="telMuseu" id="telMuseu" placeholder="XX XXXXX-XXXX">
+            </div>
+            <div id="ftMuseu">
+                <label for="image">Imagem:</label>
+                <input type="file" name="image" id="image">
+            </div>
+            <div id="desc">
+                <label for="desc">descrição:</label>
+                <textarea name="descricao" id="descricao" cols="60" rows="5"></textarea>
+            </div>
+            <div id="rua">
+                <label for="rua">Rua:</label>
+                <input type="text" name="ruaMuseu" id="ruaMuseu" required>
+            </div>
+            <div id="estado">
+                <label for="estado">Estado:</label>
+                <input type="text" name="estadoMuseu" id="estadoMuseu" required>
+            </div>
+            <div id="cidade">
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidadeMuseu" id="cidadeMuseu" required>
+            </div>
+            <div id="cnpj">
+                <label for="cnpj">Cnpj</label>
+                <input type="text" name="cnpjMuseu" id="cnpjMuseu" required>
+            </div>
+            <div id="cep">
+                <label for="cep">Cep</label>
+                <input type="text" name="cepMuseu" id="cepMuseu" required>
+            </div>
+            <div id="pontoRef">
+                <label for="pontoRef">Ponto de referência</label>
+                <input type="text" name="pontoRefMuseu" id="pontoRefMuseu">
+            </div>
+            
             <div id="finalizar">
-                <input type="submit" name="submit" id="submit">
-                <input type="reset">
+                <input type="submit" value="enviar" name="submit" id="submit" class="botao">
+                <input type="reset" name="reset" id="reset" class="botao">
             </div>
-        </form>
-    </div>
+        </div>
+    </form>
 </body>
 </html>

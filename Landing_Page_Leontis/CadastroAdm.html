@@ -17,16 +17,29 @@
         </div>
     </nav>
 
-    <section class="assunto">
-        <h1 id="titulo">Cadastro Administrativo</h1>
-
-        <p>Bem vindo ao Leontis! Cadastre-se aqui como administrador para gerenciar as informações do seu museu, como seu catálogo de obras, descrição, guia, entre outras funções.</p>
+    <div id="cadastro">
+        <div id="box">
+            <p>Bem vindo ao Leontis! Cadastre-se aqui como administrador para gerenciar as informações do seu museu, como seu catálogo de obras, descrição, guia, entre outras funções.</p>
+        </div>
 
         <div id="formulario">
             <form>
-                
+                <h2 id="titCadastro">Fazer Cadastro:</h2>
+
+                <label for="email">Digite o e-mail que deseja cadastrar:</label><br>
+                <input type="email" name="email" id="email" placeholder="email@domínio.com" size="45" required><br>
+
+                <label for="senha">Digite sua senha:</label><br>
+                <input type="password" name="senha" id="senha" placeholder="XXXXXXXX" size="45" required><br>
+
+                <label for="confirmSenha">Confirme sua senha:</label><br>
+                <input type="password" name="confirmSenha" id="confirmSenha" placeholder="XXXXXXXX" size="45" required><br>
+
+                <div id="finalizar">
+                    <input type="submit" name="submit" id="submit">
+                </div>
             </form>
         </div>
-    </section>
+    </div>
 </body>
 </html>
