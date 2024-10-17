@@ -20,54 +20,136 @@
 
     <form>
         <div id="formulario">
-            <h2 id="titCadastro">Cadastro de Museu:</h2>
+            <h1 id="titCadastro">Cadastro de Museu:</h1>
             <div id="nome">
-                <label for="nome">nome do Museu:</label>
-                <input type="text" name="nomeMuseu" id="nomeMuseu" placeholder="Digite como os outros vão te chamar" size="45" required>
+                <label for="nome">Nome do Museu:</label>
+                <input type="text" name="nomeMuseu" id="nomeMuseu" size="45" required>
             </div>
+
             <div id="inauguracao">
                 <label for="dtInauguracao">Inauguração:</label>
                 <input type="date" name="dtInauguracao" id="dtInauguracao" required>
             </div>
+
             <div id="tel">
                 <label for="tel">Telefone:</label>
                 <input type="tel" name="telMuseu" id="telMuseu" placeholder="XX XXXXX-XXXX">
             </div>
+
             <div id="ftMuseu">
                 <label for="image">Imagem:</label>
                 <input type="file" name="image" id="image">
             </div>
+
             <div id="desc">
-                <label for="desc">descrição:</label>
+                <label for="descricao">Descrição:</label>
                 <textarea name="descricao" id="descricao" cols="60" rows="5"></textarea>
             </div>
-            <div id="rua">
-                <label for="rua">Rua:</label>
-                <input type="text" name="ruaMuseu" id="ruaMuseu" required>
+
+            <div id="diasFunc">
+                <h2 id="titDiasFunc">Dias de Funcionamento:</h2>
+                <div class="dias">
+                    <h3 class="subtit">Dias</h3>
+                    <div class="dia"><input type="checkbox" id="dom"><p>Domingo</p></div>
+                    <div class="dia"><input type="checkbox" id="seg"><p>Segunda</p></div>
+                    <div class="dia"><input type="checkbox" id="ter"><p>Terça</p></div>
+                    <div class="dia"><input type="checkbox" id="qua"><p>Quarta</p></div>
+                    <div class="dia"><input type="checkbox" id="qui"><p>Quinta</p></div>
+                    <div class="dia"><input type="checkbox" id="sex"><p>Sexta</p></div>
+                    <div class="dia"><input type="checkbox" id="sab"><p>Sábado</p></div>
+                </div>
+                <div class="abertura">
+                    <h3 class="subtit">Abertura</h3>
+                    <input type="time" name="" id="" class="hrAbertura">
+                    <input type="time" name="" id="" class="hrAbertura">
+                    <input type="time" name="" id="" class="hrAbertura">
+                    <input type="time" name="" id="" class="hrAbertura">
+                    <input type="time" name="" id="" class="hrAbertura">
+                    <input type="time" name="" id="" class="hrAbertura">
+                    <input type="time" name="" id="" class="hrAbertura">
+                </div>
+                <div class="fechamento">
+                    <h3 class="subtit">Fechamento</h3>
+                    <input type="time" name="" id="" class="hrFechamento">
+                    <input type="time" name="" id="" class="hrFechamento">
+                    <input type="time" name="" id="" class="hrFechamento">
+                    <input type="time" name="" id="" class="hrFechamento">
+                    <input type="time" name="" id="" class="hrFechamento">
+                    <input type="time" name="" id="" class="hrFechamento">
+                    <input type="time" name="" id="" class="hrFechamento">
+                </div>
+                <div class="valorIngresso">
+                    <h3 class="subtit">Valor Ingresso</h3>
+                    <input type="text" name="" id="" class="ingresso">
+                    <input type="text" name="" id="" class="ingresso">
+                    <input type="text" name="" id="" class="ingresso">
+                    <input type="text" name="" id="" class="ingresso">
+                    <input type="text" name="" id="" class="ingresso">
+                    <input type="text" name="" id="" class="ingresso">
+                    <input type="text" name="" id="" class="ingresso">
+                </div>
             </div>
-            <div id="estado">
-                <label for="estado">Estado:</label>
-                <input type="text" name="estadoMuseu" id="estadoMuseu" required>
-            </div>
-            <div id="cidade">
-                <label for="cidade">Cidade:</label>
-                <input type="text" name="cidadeMuseu" id="cidadeMuseu" required>
-            </div>
+
             <div id="cnpj">
-                <label for="cnpj">Cnpj</label>
+                <label for="cnpjMuseu">Cnpj:</label>
                 <input type="text" name="cnpjMuseu" id="cnpjMuseu" required>
             </div>
+
+            <div id="estado">
+                <label for="estadoMuseu">Estado:</label>
+                <select name="estadoMuseu" id="estadoMuseu" required size="4">
+                    <option value="acre">Acre</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="amapa">Amapá</option>
+                    <option value="amazonas">Amazonas</option>
+                    <option value="bahia">Bahia</option>
+                    <option value="ceara">Ceará</option>
+                    <option value="espirito santo">Espírito Santo</option>
+                    <option value="goias">Goiás</option>
+                    <option value="maranhao">Maranhão</option>
+                    <option value="matoGrosso">Mato Grosso</option>
+                    <option value="matoGrossoDoSul">Mato Grosso do Sul</option>
+                    <option value="minasGerais">Minas Gerais</option>
+                    <option value="para">Pará</option>
+                    <option value="paraiba">Paraíba</option>
+                    <option value="parana">Paraná</option>
+                    <option value="pernambuco">Pernambuco</option>
+                    <option value="piauí">Piauí</option>
+                    <option value="rioDeJaneiro">Rio de Janeiro</option>
+                    <option value="rioGrandeDoNorte">Rio Grande do Norte</option>
+                    <option value="rioGrandeDoSul">Rio Grande do Sul</option>
+                    <option value="rondonia">Rondônia</option>
+                    <option value="roraima">Roraima</option>
+                    <option value="santaCatarina">Santa Catarina</option>
+                    <option value="saoPaulo">São Paulo</option>
+                    <option value="sergipe">Sergipe</option>
+                    <option value="tocantins">Tocantins</option>
+                    <option value="distritoFederal">Distrito Federal</option>
+                </select>
+            </div>
+
+            <div id="cidade">
+                <label for="cidadeMuseu">Cidade:</label>
+                <input type="text" name="cidadeMuseu" id="cidadeMuseu" required>
+            </div>
+
             <div id="cep">
-                <label for="cep">Cep</label>
+                <label for="cepMuseu">Cep:</label>
                 <input type="text" name="cepMuseu" id="cepMuseu" required>
             </div>
+
+            <div id="rua">
+                <label for="ruaMuseu">Rua:</label>
+                <input type="text" name="ruaMuseu" id="ruaMuseu" required>
+            </div>
+
             <div id="pontoRef">
-                <label for="pontoRef">Ponto de referência</label>
+                <label for="pontoRefMuseu">Ponto de referência:</label>
                 <input type="text" name="pontoRefMuseu" id="pontoRefMuseu">
             </div>
             
             <div id="finalizar">
-                <input type="submit" value="enviar" name="submit" id="submit" class="botao">
+                <input type="submit" name="submit" id="submit" value="enviar" class="botao">
                 <input type="reset" name="reset" id="reset" class="botao">
             </div>
         </div>

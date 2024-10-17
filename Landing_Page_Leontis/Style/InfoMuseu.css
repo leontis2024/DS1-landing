@@ -1,17 +1,18 @@
 #museu {
-    width: 1536px;
-    height: 777px;
+    width: 100%;
+    height: 100%;
     display: flex;
 }
 
 #infoMuseu {
-    width: 768px;
-    height: 621.6px;
+    width: 50vw;
+    height: 83vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    margin-top: 93.24px;
+    padding-top: 12vh;
+    padding-bottom: 5vh;
     overflow-x: auto;
     white-space: nowrap;
 }
@@ -25,17 +26,17 @@
 }
 
 #nomeMuseu {
-    width: 614.4px;
+    width: 40vw;
     font-size: 50px;
 }
 
 #descMuseu, #rua, #estadoCidade {
-    width: 614.4px;
+    width: 45vw;
     font-size: 20px;
 }
 
 #diasFunc {
-    width: 600px;
+    width: 45vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
@@ -96,7 +97,40 @@
     grid-area: fechado;
 }
 
+#editar {
+    width: 45vw;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #eeb08c;
+    border: 2px solid #282525;
+    border-radius: 20px;
+}
+
 #fotoMuseu {
-    width: 768px;
-    height: 777px;
+    width: 50vw;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    #museu {
+        flex-direction: column;
+    }
+
+    #infoMuseu {
+        width: 100vw;
+    }
+
+    #nomeMuseu {
+        width: 85vw;
+    }
+
+    #descMuseu, #rua, #estadoCidade, #diasFunc, #editar {
+        width: 90vw;
+    }
+
+    #fotoMuseu {
+        width: 100vw;
+    }
 }

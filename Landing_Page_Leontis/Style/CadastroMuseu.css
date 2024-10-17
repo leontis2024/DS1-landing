@@ -3,28 +3,29 @@ body {
 }
 
 #formulario {
-    height: 80vh;
+    width: 90vw;
     position: relative;
     top: 12vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 2vw;
-    grid-template-rows: repeat(5, 1fr);
-    row-gap: 1vh;
+    row-gap: 4vh;
     grid-template-areas:
     "titulo titulo titulo titulo"
     "nome inauguracao tel ftMuseu"
-    "desc desc rua estado"
-    "cidade cnpj cep pontoRef"
+    "desc desc diasFunc diasFunc"
+    "cnpj estado cidade cep"
+    "rua rua pontoRef pontoRef"
     "finalizar finalizar finalizar finalizar";
-    margin: 0px 4vw;
+    margin: auto;
+    padding: 20px;
 }
 
 label {
     font-size: 20px;
 }
 
-input, textarea {
+input, textarea, select, option {
     font-size: 16px;
     padding: 1px 3px;
 }
@@ -52,19 +53,24 @@ input, textarea {
 }
 
 #descricao {
-    resize: vertical;
-}
-
-#rua {
-    grid-area: rua;
+    height: 32vh;
+    resize: none;
 }
 
 #estado {
     grid-area: estado;
 }
 
+#estadoMuseu {
+    height: 12vh;
+}
+
 #cidade {
     grid-area: cidade;
+}
+
+#rua {
+    grid-area: rua;
 }
 
 #pontoRef {
@@ -89,10 +95,12 @@ input, textarea {
 }
 
 .botao {
+    width: 100px;
     font-size: 16px;
     font-weight: 600;
     background-color: #EEB08C;
     color: #282525;
+    cursor: pointer;
     border: 2px solid #282525;
     border-radius: 30px;
     padding: 8px;
@@ -101,4 +109,82 @@ input, textarea {
 #nome, #inauguracao, #tel, #desc, #rua, #estado, #cidade, #pontoRef, #cnpj, #cep, #ftMuseu {
     display: flex;
     flex-direction: column;
+}
+
+#diasFunc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "titulo titulo titulo titulo"
+    "dias abertura fechamento ingresso"
+    "fechado fechado fechado fechado";
+    border: 1px solid #282525;
+    border-radius: 5px;
+    text-align: center;
+    grid-area: diasFunc;
+}
+
+#titDiasFunc {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.subtit {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dias {
+    grid-area: dias;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid #282525;
+}
+
+.dia {
+    width: 110px;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    gap: 10px;
+}
+
+.abertura {
+    grid-area: abertura;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid #282525;
+}
+
+.fechamento {
+    grid-area: fechamento;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid #282525;
+}
+
+.valorIngresso {
+    grid-area: ingresso;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid #282525;
+}
+
+.ingresso {
+    width: 100px;
+}
+
+#titDiasFunc, .dias, .abertura, .fechamento, .valorIngresso {
+    border-radius: 2px;
+    padding: 3px;
 }

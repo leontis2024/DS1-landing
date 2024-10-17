@@ -19,24 +19,36 @@ body {
 }
 
 #guias {
-    width: 100vw;
+    width: fit-content;
+    height: fit-content;
     position: relative;
     top: 130px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2vw;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto;
 }
 
 .guia {
-    width: 700px;
-    height: 100px;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
     background-color: #EEB08C;
     border: 2px solid #282525;
     border-radius: 15px;
     padding: 10px;
     transition: 0.5s;
+}
+
+.ftGuia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ftGuia > img {
+    border-radius: 10px;
+    border: 2px solid #282525;
 }
 
 .guia:hover {

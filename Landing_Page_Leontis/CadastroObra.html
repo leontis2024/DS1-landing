@@ -3,18 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
     <link rel="stylesheet" href="Style/Style.css">
-    <link rel="shortcut icon" href="Resources/leon.png" type="png">
-    <title>Cadastro de Obra</title>
+    <link rel="stylesheet" href="Style/cadastroObra.css">
+    <link rel="shortcut icon" href="Resources/leon.png" type="image/jpg">
 </head>
 <body>
     <nav id="navbar">
-        <a href="Index.html" id="leon"><img src="Resources/leon.png"></a>
+        <a href="Index.html" id="leon"><img src="Resources/leon.png" ></a>
 
         <div id="links">
-            <a href="CadastroMuseu.html">Cadastro de Museu</a>
+            <a href="CadastroMuseu.html">Cadastro de Obra</a>
             <a href="Login.html">Fazer Login</a>
         </div>
     </nav>
+
+    <form>
+        <div id="formulario">
+            <h1 id="titCadastro">Cadastro de Obra:</h1>
+            <div id="nome">
+                <label for="nomeObra">Nome da Obra:</label>
+                <input type="text" name="nomeObra" id="nomeObra" size="45" required>
+            </div>
+
+            <div id="inicioProd">
+                <label for="dtInicioProd">Início da Produção:</label>
+                <input type="number" name="dtInicioProd" id="dtInicioProd" min="0" max="2024" placeholder="Ano de início" required>
+            </div>
+
+            <div id="fimProd">
+                <label for="dtFimProd">Fim da Produção:</label>
+                <input type="number" name="dtFimProd" id="dtFimProd" min="0" max="2024" placeholder="Ano de finalização" required>
+            </div>
+
+            <div id="ftObra">
+                <label for="image">Imagem:</label>
+                <input type="file" name="image" id="image">
+            </div>
+
+            <div id="desc">
+                <label for="descricao">Descrição:</label>
+                <textarea name="descricao" id="descricao" cols="60" rows="5"></textarea>
+            </div>
+
+            <div id="genero">
+                <label for="generoObra">Gênero:</label>
+                <select name="generoObra" id="generoObra" required size="4">
+                    <option value="acre">Acre</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="amapa">Amapá</option>
+                    <option value="amazonas">Amazonas</option>
+                </select>
+            </div>
+
+            <div id="autor">
+                <label for="autorObra">Autor:</label>
+                <select name="autorObra" id="estadoMuseu" required size="4">
+                    <option value="acre">Acre</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="amapa">Amapá</option>
+                    <option value="amazonas">Amazonas</option>
+                </select>
+            </div>
+            
+            <div id="finalizar">
+                <input type="submit" name="submit" id="submit" value="enviar" class="botao">
+                <input type="reset" name="reset" id="reset" class="botao">
+            </div>
+        </div>
+    </form>
 </body>
 </html>

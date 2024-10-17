@@ -2,7 +2,7 @@
 #inicio {
     background-color: #F5E0D4;
 }
-
+ 
 #txtBox {
     width: 500px;
     height: fit-content;
@@ -14,20 +14,20 @@
     top: 170px;
     left: 130px;
 }
-
+ 
 #tituloIni {
     padding: 0px 20px;
     text-align: center;
     font-size: 50px;
     font-weight: 600;
 }
-
+ 
 #descIni {
     margin: 20px 0px;
     font-size: 30px;
     text-align: center;
 }
-
+ 
 #cadastro {
     width: 250px;
     height: 50px;
@@ -44,24 +44,24 @@
     transition: 0.3s;
     margin: 20px 0;
 }
-
+ 
 #login {
     font-size: 20px;
 }
-
+ 
 #cadastro:hover {
     transform: scale(1.02);
 }
-
+ 
 #cadastro:active {
     transform: scale(1);
 }
-
+ 
 #login > a {
     text-decoration: none;
     color: #7C3939;
 }
-
+ 
 #ilustracao1 {
     height: 500px;
     width: 500px;
@@ -70,40 +70,39 @@
     bottom: 230px;
     right: 180px;
 }
-
+ 
 #ilustracao1 > #img {
     position: relative;
     border-radius: 5px;
     box-shadow: black 5px 5px 15px 0px;
     transition: 0.5s;
 }
-
+ 
 #ilustracao1 > #img:hover {
     transform: scale(1.01);
 }
-
+ 
 #ilustracao1 > #img:nth-child(1) {
     height: 400px;
     left: 50px;
 }
-
+ 
 #ilustracao1 > #img:nth-child(2) {
     height: 300px;
     top: -250px;
     left: 220px;
 }
-
+ 
 #ilustracao1 > #img:nth-child(3) {
     height: 200px;
     top: -415px;
 }
-
-/* Sobre o App */
-
+ 
+/* Nossas Funcionalidades */
 #sobreApp {
     background-color: #EEB08C;
 }
-
+ 
 #tituloApp {
     width: fit-content;
     position: relative;
@@ -112,262 +111,332 @@
     font-size: 50px;
     font-weight: 600;
 }
-
+ 
 #funcionalidades {
     width: 100vw;
-    height: fit-content;
+    min-height: 600px;
     position: relative;
     top: 80px;
     padding: 20px 0px;
-    overflow: auto;
+    overflow:auto;
     white-space: nowrap;
 }
-
+ 
 #funcionalidades ::-webkit-scrollbar {
     display: none;
 }
-
+ 
 .funcao {
+    vertical-align: top;
     width: 400px;
     height: 500px;
     margin: 0px 20px;
-    background-color: #EEB08C;
-    box-shadow: 0px 0px 10px 0px #7C3939;
-    border: 2px solid #7C3939;
     border-radius: 30px;
     display: inline-block;
     transition: 0.5s;
 }
-
+ 
 .funcao:hover {
     transform: scale(1.01);
     box-shadow: 0px 0px 15px 0px #7C3939;
 }
-
+ 
 .funcao {
-    width: 220px;
+    width: 210px;
     height: 400px;
 }
-
+ 
 .imagensCarrossel {
-    border-radius: 5.8%;
+    border-radius: 7%;
     cursor: pointer;
-    width: 220px;
+    width: 210px;
     height: 400px;
 }
-
+ 
 .funcionalidades {
     position: relative;
     top: 20px;
 }
-
-
+ 
+ 
 /* Escondendo o checkbox */
-input[type="checkbox"] {
+input[type="radio"] {
     display: none;
 }
+ 
 /* Escondendo a mensagem que irá aparecer após clicar no chekbox invisível */
-
-
-/* Esse selector é usado para aplicar estilos a todos os elementos <input> que tem um atributo type definido como checkbox */
-
-/* Exibe as informações quando o checkbox está marcado, sendo que o checkbox é invisível */
-input[type="checkbox"]:checked + label + #informacoes1 {
+ 
+ 
+/* Escondendo as descrições inicialmente */
+#informacoes1, #informacoes2, #informacoes3, #informacoes4, #informacoes5, #informacoes6 {
+    display: none;
+}
+ 
+/* Exibindo a descrição correspondente quando o radio está marcado */
+input[type="radio"]:checked + label + #informacoes1 {
     display: block;
 }
-input[type="checkbox"]:checked + label + #informacoes2 {
+ 
+input[type="radio"]:checked + label + #informacoes2 {
     display: block;
 }
-input[type="checkbox"]:checked + label + #informacoes3 {
+ 
+input[type="radio"]:checked + label + #informacoes3 {
     display: block;
 }
-input[type="checkbox"]:checked + label + #informacoes4 {
+ 
+input[type="radio"]:checked + label + #informacoes4 {
     display: block;
 }
-input[type="checkbox"]:checked + label + #informacoes5 {
+ 
+input[type="radio"]:checked + label + #informacoes5 {
     display: block;
 }
-input[type="checkbox"]:checked + label + #informacoes5 {
+ 
+input[type="radio"]:checked + label + #informacoes6 {
     display: block;
 }
-
+ 
+/* Selecionar qualquer input com o name 'grupoFuncao' */
+ 
+ 
 /* Tevemos ter uma label no html para que o código acima funcione */
 /* Em HTML, a tag <label> é usada para definir rótulos (labels) para elementos de formulário, como caixas de texto, botões de rádio, caixas de seleção, etc.  */
-
+ 
 #informacoes1 {
     position: relative;
     display: none;
     margin-top: 10px;
     font-size: 16px;
     color: #333;
+    white-space: wrap;
+    border-radius: 9px;
+    bottom: 250px;
+    left: 100px;
+    background-color: #F5E0D4;
+    padding: 30px;
+    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
+    ;
+    /* box-shadow: offset-x define a distancia horizontal da sombra) offset-y (define a distancia vertical da sombra) blur-radius (define o nível de desfoque da sombra) spread-radius (define o quanto a borda deve crescer ou diminuir) color (cor da sombra)*/
 }
-
+ 
 #informacoes2 {
     position: relative;
     display: none;
     margin-top: 10px;
     font-size: 16px;
     color: #333;
-    left: 20px;
+    white-space: wrap;
+    border-radius: 9px;
+    bottom: 250px;
+    left: 100px;
+    background-color: #F5E0D4;
+    padding: 30px;
+    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
+ 
+ 
+ 
 }
-
+ 
 #informacoes3 {
     position: relative;
     display: none;
     margin-top: 10px;
     font-size: 16px;
     color: #333;
-    left: 50px;
+    white-space: wrap;
+    border-radius: 9px;
+    bottom: 250px;
+    left: 100px;
+    background-color: #F5E0D4;
+    padding: 30px;
+    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
+ 
+ 
+ 
 }
-
+ 
 #informacoes4 {
     position: relative;
     display: none;
     margin-top: 10px;
     font-size: 16px;
     color: #333;
-    left: 70px;
+    white-space: wrap;
+    border-radius: 9px;
+    bottom: 250px;
+    left: 100px;
+    background-color: #F5E0D4;
+    padding: 30px;
+    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
+ 
+ 
+ 
 }
-
+ 
 #informacoes5 {
     position: relative;
     display: none;
     margin-top: 10px;
     font-size: 16px;
     color: #333;
-    left: 90px;
+    white-space: wrap;
+    border-radius: 9px;
+    bottom: 250px;
+    left: 100px;
+    background-color: #F5E0D4;
+    padding: 30px;
+    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
+ 
+ 
 }
-
+ 
 #informacoes6 {
     position: relative;
     display: none;
     margin-top: 10px;
     font-size: 16px;
     color: #333;
-    left: 120px;
+    white-space: wrap;
+    border-radius: 9px;
+    bottom: 250px;
+    left: 100px;
+    background-color: #F5E0D4;
+    padding: 30px;
+    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
+ 
 }
-
+ 
+/*Sobre o App */
+ 
+#sobreApp{
+    background-color: #F5E0D4;
+    color: #000000;
+}
+ 
+#sobreApp h3{
+    width: 37vw;
+    height: fit-content;
+    font-size: 30px;
+    margin-left: 2.5rem;
+}
+ 
+#sobreApp a{
+    width: 450px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #F5E0D4;
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: #7C3939;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 20px 0;
+}
+ 
+.txtBoxApp{
+    color: #7C3939;
+}
+ 
+.tituloApp{
+    font-weight: 600;
+    font-size: 70px;
+    width: 40vw;  
+    display: flex;
+    justify-content: center;
+}
+ 
+.imgRomero{
+    width: 768px;
+    height: 706px;
+    position: relative;
+    float: right;
+    bottom: 253px;
+}
+ 
 /*Sobre a Empresa */
-
+ 
 #sobreEmp {
     background-color: whitesmoke;
 }
-
+ 
 #emp {
     color:rgb(40, 238, 50);
     left: 10rem;
 }
-
+ 
+.titulo {
+    color:rgb(40, 238, 50);
+    width: fit-content;
+    top: 120px;
+    font-size: 50px;
+    font-weight: 600;
+    left: 56rem;
+    position: relative;
+}
+ 
 #info {
+    border-left: solid 5px rgb(40, 238, 50);
     width: 30vw;
     height: fit-content;
     padding: 20px;
     text-align: left;
     position: relative;
     top: 120px;
-    left: 6vw;
+    left: 55rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+ 
 #info > h2 {
     margin-top: 5vh;
     color: rgb(40, 238, 50);
     font-weight: 600;
 }
-
-/* Nossos Contatos */
-#nossosCont{
-    width: 100vw;
-    height: 20vh;
-    background-color: #202933;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+ 
+/* Integrantes */
+.integrantes{
+    height: 620px;
+    width: 1536px;
+    background-color: #7C3939;
 }
  
-#nossosCont>hr{
-    height: 102.2px;
+.visusIntegrantes{
+    float: right;
+    clear: left;
+    height: fit-content;
+    width: fit-content;
 }
  
-#imgFooter{
-    height: 102.2px;
-    width: 107.52px;
+.logointegrantes{
+    height: 150px;
+    width: 150px;
+    box-shadow: 0px 0px 3px 0px #000000;
+    border-radius: 10000px;
+    position: relative;
+    bottom: 420px;
+    left: 15rem;
+}
+/*
+.integrantes ul{
+    color: aliceblue;
+    position: relative;
+    top: 2550px;
+    left: 1100px;
+    font-size: 20px;
 }
  
-.leontisFooter{
-    color: #F5E0D4;
-    justify-self: left;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
+.integrantes h1{
+    color: aliceblue;
+    position: relative;
+    top: 2530px;
+    left: 1000px;
+    margin-bottom: 10px;
+} */
  
-.linkIntegrantes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
  
-.linkIntegrantes ul {
-    display: flex;
-    flex-direction: row;
-}
  
-.linkIntegrantes ul li{
-    margin: 0.5vh 0.5vw 0.5vh 0;
-    list-style: none;
-}
- 
-.imagemFooter{
-    background-image: url('../Resources/Instagram.png');
-    background-size: cover;
-    height: 48px;
-    width: 48px;
-    transition: 0.5s ;
-}
- 
-.imagemFooter:hover{
-    background-image: url('../Resources/InstagramHover.png');
-    transition: 0.5s;
-}
- 
-.mailFooter{
-    background-image: url('../Resources/Mail.png');
-    background-size: cover;
-    height: 48px;
-    width: 48px;
-    transition: 0.5s ;
-}
- 
-.mailFooter:hover{
-    background-image: url('../Resources/MailHover.png');
-    transition: 0.5s;
-}
- 
-.linkIntegrantes > h1{
-    color: #F5E0D4;
-    font-size: 30px;
-    transition: 0.5s;
-}
- 
-.linksFooter{
-    color: #F5E0D4;
-    transition: 0.5s;
-}
- 
-.linksFooter > a{
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    text-decoration: none;
-    transition: 0.5s;
-}
- 
-.linksFooter > a:hover{
-    color: #F5E0D4 ;
-    transition: 0.5s;
-}
