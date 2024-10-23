@@ -15,20 +15,6 @@
     left: 130px;
 }
  
-#info {
-    border-left: solid 5px rgb(40, 238, 50);
-    width: 30vw;
-    height: fit-content;
-    padding: 20px;
-    text-align: left;
-    position: relative;
-    top: 120px;
-    left: 55rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #tituloIni {
     padding: 0px 20px;
     text-align: center;
@@ -367,15 +353,21 @@ input[type="radio"]:checked + label + #informacoes6 {
 }
 
 .mockup{
-    height: 730px;
     width: 1536px;
+    height: 730px;
     position:absolute;
     opacity: 0.33;
+    z-index: 0;
+    background-size: cover;
+}
+
+#txtBoxEmp{
+    display: flex;
+    justify-content: center;
 }
  
 #emp {
     color:rgb(40, 238, 50);
-    left: 56rem;
 }
  
 .titulo {
@@ -384,8 +376,8 @@ input[type="radio"]:checked + label + #informacoes6 {
     top: 120px;
     font-size: 50px;
     font-weight: 600;
-    left: 56rem;
     position: relative;
+    left: 11rem;
 }
  
 #info {
@@ -395,8 +387,7 @@ input[type="radio"]:checked + label + #informacoes6 {
     padding: 20px;
     text-align: left;
     position: relative;
-    top: 120px;
-    left: 55rem;
+    top: 170px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -410,13 +401,14 @@ input[type="radio"]:checked + label + #informacoes6 {
 }
  /* Integrantes */
 .integrantes{
+    z-index: 1;
     height: 520PX;
     width: 1536px;
     background-color: #7C3939;
 }
  
 .visusIntegrantes{
-height: 520px;
+    height: 520px;
 }
  
 .logointegrantes{
