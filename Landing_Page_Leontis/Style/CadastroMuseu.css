@@ -53,7 +53,7 @@ input, textarea, select, option {
 }
 
 #descricao {
-    height: 32vh;
+    height: 230px;
     resize: none;
 }
 
@@ -112,79 +112,35 @@ input, textarea, select, option {
 }
 
 #diasFunc {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    grid-area: diasFunc;
+    border: 2px solid #282525;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.diaSemana {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-    "titulo titulo titulo titulo"
-    "dias abertura fechamento ingresso"
-    "fechado fechado fechado fechado";
-    border: 1px solid #282525;
-    border-radius: 5px;
+    column-gap: 10px;
     text-align: center;
-    grid-area: diasFunc;
+    font-size: 18px;
+}
+
+input[type="time"] {
+    width: 50px;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 100px;
+    text-align: center;
 }
 
 #titDiasFunc {
-    grid-area: titulo;
     text-align: center;
     font-size: 28px;
     font-weight: 600;
-}
-
-.subtit {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.dias {
-    grid-area: dias;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 4px;
-    border: 1px solid #282525;
-}
-
-.dia {
-    width: 110px;
-    display: flex;
-    font-size: 18px;
-    align-items: center;
-    gap: 10px;
-}
-
-.abertura {
-    grid-area: abertura;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 4px;
-    border: 1px solid #282525;
-}
-
-.fechamento {
-    grid-area: fechamento;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 4px;
-    border: 1px solid #282525;
-}
-
-.valorIngresso {
-    grid-area: ingresso;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 4px;
-    border: 1px solid #282525;
-}
-
-.ingresso {
-    width: 100px;
-}
-
-#titDiasFunc, .dias, .abertura, .fechamento, .valorIngresso {
-    border-radius: 2px;
-    padding: 3px;
 }

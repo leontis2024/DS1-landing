@@ -5,45 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="Style/Style.css">
-    <link rel="stylesheet" href="Style/cadastroObra.css">
+    <link rel="stylesheet" href="Style/CadastroArt.css">
+    <link rel="stylesheet" href="Style/navbarMuseu.css">
     <link rel="shortcut icon" href="Resources/leon.png" type="image/jpg">
 </head>
 <body>
-    <nav id="navbar">
-        <a href="Index.html" id="leon"><img src="Resources/leon.png" ></a>
+    <nav id="navbarMuseu">
+        <div id="left">
+            <a href="Index.html" id="leon"><img src="Resources/leon.png"></a>
+        </div>
 
-        <div id="links">
-            <a href="CadastroMuseu.html">Cadastro de Obra</a>
-            <a href="Login.html">Fazer Login</a>
+        <div id="opcoesAtalhos">
+            <div id="titOpcoesAtalhos">
+                Atalhos
+            </div>
+            
+            <div id="atalhos">
+                <a href="InfoMuseu.html">Home</a>
+                <a href="Obras.html">Obras</a>
+                <a href="artistas.html">Artistas</a>
+                <a href="guias.html">Guias</a>
+            </div>
+        </div>
+
+        <div id="navNomeMuseu">
+            MASP
         </div>
     </nav>
 
     <form>
         <div id="formulario">
             <h1 id="titCadastro">Cadastro de Artista:</h1>
+            
             <div id="nome">
                 <label for="nomeObra">Nome do Artista:</label>
                 <input type="text" name="nomeObra" id="nomeObra" size="45" required>
             </div>
 
-            <div id="inicioProd">
-                <label for="nascimento">Nascimento:</label>
-                <input type="date" name="nascimento" id="nascimento" required>
-            </div>
-
-            <div id="fimProd">
-                <label for="falecimento">Falecimento:</label>
-                <input type="date" name="falecimento" id="falecimento">
-            </div>
-
-            <div id="ftObra">
+            <div id="ftArtista">
                 <label for="image">Imagem:</label>
                 <input type="file" name="image" id="image">
             </div>
 
-            <div id="desc">
-                <label for="descricao">Descrição:</label>
-                <textarea name="descricao" id="descricao" cols="60" rows="5"></textarea>
+            <div id="nasc">
+                <label for="nascimento">Nascimento:</label>
+                <input type="date" name="nascimento" id="nascimento" required>
+            </div>
+
+            <div id="localNasc">
+                <label for="localNascimento">Local de Nascimento:</label>
+                <input type="text" name="localNascimento" id="localNascimento">
+            </div>
+
+            <div id="falec">
+                <label for="falecimento">Falecimento:</label>
+                <input type="date" name="falecimento" id="falecimento">
+            </div>
+
+            <div id="localFalec">
+                <label for="localFalecimento">Local de Falecimento:</label>
+                <input type="text" name="localFalecimento" id="localFalecimento">
             </div>
 
             <div id="genero">
@@ -54,6 +75,11 @@
                     <option value="amapa">Amapá</option>
                     <option value="amazonas">Amazonas</option>
                 </select>
+            </div>
+
+            <div id="desc">
+                <label for="descricao">Descrição:</label>
+                <textarea name="descricao" id="descricao"></textarea>
             </div>
             
             <div id="finalizar">

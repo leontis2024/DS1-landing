@@ -19,7 +19,7 @@ body {
 }
 
 #addArtista {
-    position: absolute;
+    position: relative;
     top: 100px;
     left: 30px;
     font-size: 20px;
@@ -81,4 +81,20 @@ body {
     height: 300px;
     border: 2px solid #282525;
     border-radius: 10px;
+}
+
+@media (max-width :320px) {
+    .artista {
+        width: 280px;
+    }
+
+    .imagem {
+        width: 280px;
+        height: 280px;
+    }
+
+    .ftArtista {
+        max-width: 280px;
+        max-height: 280px;
+    }
 }

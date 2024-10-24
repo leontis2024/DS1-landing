@@ -1,6 +1,6 @@
 #museu {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
 }
 
@@ -13,7 +13,7 @@
     gap: 50px;
     padding-top: 12vh;
     padding-bottom: 5vh;
-    overflow-x: auto;
+    overflow: auto;
     white-space: nowrap;
 }
 
@@ -27,6 +27,7 @@
 
 #nomeMuseu {
     width: 40vw;
+    height: 100vh;
     font-size: 50px;
 }
 
@@ -56,7 +57,7 @@
 }
 
 .subtit {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -116,21 +117,66 @@
 @media (max-width: 768px) {
     #museu {
         flex-direction: column;
+        justify-content: space-between;
     }
 
     #infoMuseu {
         width: 100vw;
+        height: 100vh;
     }
 
     #nomeMuseu {
-        width: 85vw;
+        width: 90vw;
+        font-size: 40px;
+    }
+    
+    #descMuseu, #rua, #estadoCidade {
+        width: 90vw;
+        font-size: 16px;
     }
 
-    #descMuseu, #rua, #estadoCidade, #diasFunc, #editar {
-        width: 90vw;
+    #diasFunc {
+        width: fit-content;
+    }
+
+    #titDiasFunc {
+        font-size: 22px;
+    }
+
+    .subtit {
+        font-size: 14px;
+    }
+
+    .dia, .abertura, .fechamento, .valorIngresso {
+        width: 22.5vw;
+        font-size: 10px;
+    }
+
+    #fechado {
+        font-size: 14px;
     }
 
     #fotoMuseu {
+        display: none;
+    }
+
+    #editar {
+        width: 90vw;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 428px) {
+    #diasFunc {
         width: 100vw;
+    }
+
+    .subtit {
+        font-size: 10px;
+    }
+
+    .dia, .abertura, .fechamento, .valorIngresso {
+        width: 25vw;
+        font-size: 8px;
     }
 }

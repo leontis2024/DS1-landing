@@ -10,29 +10,32 @@
 </head>
 <body>
     <nav id="navbar">
-        <a href="Index.html" id="leon"><img src="Resources/leon.png" ></a>
-
+        <div id="left">
+            <a href="Index.html" id="leon"><img src="Resources/leon.png"></a>
+        </div>
+ 
         <div id="links">
-            <a href="CadastroAdm.html">Cadastro Administrativo</a>
-            <a href="Login.html">Fazer Login</a>
+            <a href="SobreApp.html">Sobre o App</a>
+            <a href="SobreEmpresa.html">Sobre a Empresa</a>
+            <a href="#nossosCont">Nossos Contatos</a>
         </div>
     </nav>
 
     <div id="login">
-        <div id="box">
-                
-        </div>
-
         <div id="formulario">
+            <h2 id="titulo">Fazer Login:</h2>
+
             <form>
-                <h2 id="titLogin">Fazer Login:</h2>
+                <div id="inputEmail">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite o e-mail da empresa" size="45" required>
+                </div>
 
-                <label for="email">E-mail:</label><br>
-                <input type="email" name="email" id="email" placeholder="Digite o e-mail da empresa" size="45" required><br>
-
-                <label for="pwd">Senha:</label><br>
-                <input type="password" name="pwd" id="pwd" placeholder="XXXXXXXXX" size="45" required><br>
-                <p style="color: #F5E0D4;">Digite uma senha válida</p>
+                <div id="inputSenha">
+                    <label for="pwd">Senha:</label>
+                    <input type="password" name="pwd" id="pwd" placeholder="XXXXXXXXX" size="45" required>
+                    <p style="color: #F5E0D4;">Digite uma senha válida</p>
+                </div>
 
                 <div id="finalizar">
                     <input type="submit" name="submit" id="submit">
