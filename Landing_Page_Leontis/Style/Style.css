@@ -5,8 +5,8 @@
  
 html {
     scroll-behavior: smooth;
-}
- 
+    }
+    
 body {
     background-color: #F5E0D4;
 }
@@ -85,7 +85,7 @@ body {
 /* Nossos Contatos */
 #nossosCont{
     width: 1536px;
-    height: 20vh;
+    height: 146px;
     background-color: #202933;
     display: flex;
     flex-direction: row;

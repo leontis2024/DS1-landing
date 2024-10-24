@@ -28,7 +28,7 @@
     text-align: center;
 }
  
-#cadastro {
+#botao {
     width: 250px;
     height: 50px;
     display: flex;
@@ -44,16 +44,16 @@
     transition: 0.3s;
     margin: 20px 0;
 }
- 
+
 #login {
     font-size: 20px;
 }
  
-#cadastro:hover {
+#botao:hover {
     transform: scale(1.02);
 }
  
-#cadastro:active {
+#botao:active {
     transform: scale(1);
 }
  
@@ -323,18 +323,7 @@ input[type="radio"]:checked + label + #informacoes6 {
  
 #sobreApp a{
     width: 450px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
     color: #F5E0D4;
-    text-decoration: none;
-    border-radius: 40px;
-    background-color: #7C3939;
-    cursor: pointer;
-    transition: 0.3s;
-    margin: 20px 0;
 }
  
 .txtBoxApp{
@@ -351,21 +340,34 @@ input[type="radio"]:checked + label + #informacoes6 {
  
 .imgRomero{
     width: 768px;
-    height: 706px;
+    height: 731px;
     position: relative;
     float: right;
-    bottom: 253px;
+    bottom: 257px;
 }
- 
+
 /*Sobre a Empresa */
  
 #sobreEmp {
-    background-color: whitesmoke;
+    background-color: black;
+}
+
+.mockup{
+    width: 1536px;
+    height: 730px;
+    position:absolute;
+    opacity: 0.33;
+    z-index: 0;
+    background-size: cover;
+}
+
+#txtBoxEmp{
+    display: flex;
+    justify-content: center;
 }
  
 #emp {
     color:rgb(40, 238, 50);
-    left: 10rem;
 }
  
 .titulo {
@@ -374,8 +376,8 @@ input[type="radio"]:checked + label + #informacoes6 {
     top: 120px;
     font-size: 50px;
     font-weight: 600;
-    left: 56rem;
     position: relative;
+    left: 11rem;
 }
  
 #info {
@@ -385,11 +387,11 @@ input[type="radio"]:checked + label + #informacoes6 {
     padding: 20px;
     text-align: left;
     position: relative;
-    top: 120px;
-    left: 55rem;
+    top: 170px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: whitesmoke;
 }
  
 #info > h2 {
@@ -397,43 +399,42 @@ input[type="radio"]:checked + label + #informacoes6 {
     color: rgb(40, 238, 50);
     font-weight: 600;
 }
- 
-/* Integrantes */
+ /* Integrantes */
 .integrantes{
-    height: 620px;
+    z-index: 1;
+    height: 520PX;
     width: 1536px;
     background-color: #7C3939;
 }
  
 .visusIntegrantes{
-    float: right;
-    clear: left;
-    height: fit-content;
-    width: fit-content;
+    height: 520px;
 }
  
 .logointegrantes{
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     box-shadow: 0px 0px 3px 0px #000000;
     border-radius: 10000px;
     position: relative;
-    bottom: 420px;
-    left: 15rem;
+    bottom: 360px;
+    left: 20.6rem;
 }
-/*
-.integrantes ul{
-    color: aliceblue;
+
+.integrantes ul {
     position: relative;
-    top: 2550px;
-    left: 1100px;
-    font-size: 20px;
+    text-align: center;
+    bottom: 350px;
+    left: 24rem;
+    flex-wrap: wrap;
+    color: #F5E0D4;
 }
- 
-.integrantes h1{
-    color: aliceblue;
+.integrantes h1 {
     position: relative;
     top: 2530px;
     left: 1000px;
     margin-bottom: 10px;
-} */
+}
+ 
+ 
+ 
