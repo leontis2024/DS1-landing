@@ -7,15 +7,14 @@ body {
     position: relative;
     top: 12vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 2vw;
     row-gap: 4vh;
     grid-template-areas:
-    "titulo titulo titulo titulo"
-    "nome ftArtista nascimento localNasc"
-    "falecimento localFalec genero genero"
-    "desc desc desc desc"
-    "finalizar finalizar finalizar finalizar";
+    "titulo titulo titulo"
+    "nome desc desc"
+    "ftGuia desc desc"
+    "finalizar finalizar finalizar";
     margin: auto;
     padding: 20px;
 }
@@ -24,7 +23,7 @@ label {
     font-size: 20px;
 }
 
-input, textarea, select, option {
+input, textarea {
     font-size: 16px;
     padding: 1px 3px;
 }
@@ -39,22 +38,6 @@ input, textarea, select, option {
     grid-area: nome;
 }
 
-#nasc {
-    grid-area: nascimento;
-}
-
-#localNasc {
-    grid-area: localNasc;
-}
-
-#falec {
-    grid-area: falecimento;
-}
-
-#localFalec {
-    grid-area: localFalec;
-}
-
 #desc {
     grid-area: desc;
 }
@@ -64,24 +47,8 @@ input, textarea, select, option {
     resize: none;
 }
 
-#autor {
-    grid-area: autor;
-}
-
-#autorObra {
-    height: 12vh;
-}
-
-#genero {
-    grid-area: genero;
-}
-
-#generoObra {
-    height: 12vh;
-}
-
-#ftArtista {
-    grid-area: ftArtista;
+#ftGuia {
+    grid-area: ftGuia;
 }
 
 #finalizar {
@@ -101,7 +68,7 @@ input, textarea, select, option {
     padding: 8px;
 }
 
-#nome, #nasc, #localNasc, #falec, #localFalec, #desc, #autor, #genero, #ftArtista {
+#nome, #desc, #ftGuia {
     display: flex;
     flex-direction: column;
 }

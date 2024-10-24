@@ -18,6 +18,28 @@ body {
     cursor: default;
 }
 
+#addGuia {
+    position: relative;
+    top: 100px;
+    left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #EEB08C;
+    border: 2px solid #282525;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+#addGuia:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#addGuia:active {
+    transform: scale(1);
+}
+
 #guias {
     width: fit-content;
     height: fit-content;
@@ -30,7 +52,8 @@ body {
 }
 
 .guia {
-    width: 70vw;
+    width: 1000px;
+    height: 300px;
     display: flex;
     justify-content: space-between;
     background-color: #EEB08C;
@@ -40,6 +63,53 @@ body {
     transition: 0.5s;
 }
 
+.guia:hover {
+    transform: scale(1.02);
+}
+
+.infoGuia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nomeGuia {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.descGuia {
+    width: 650px;
+    height: 180px;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.botao {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #F5E0D4;
+    border: 2px solid #282525;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.botao:active {
+    transform: scale(1);
+}
+
 .ftGuia {
     display: flex;
     justify-content: center;
@@ -47,19 +117,43 @@ body {
 }
 
 .ftGuia > img {
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 10px;
     border: 2px solid #282525;
 }
 
-.guia:hover {
-    transform: scale(1.05);
+@media (max-width: 1025px) {
+    .guia {
+        width: 730px;
+    }
+
+    .descGuia {
+        width: 400px;
+    }
 }
 
-.guia:active {
-    transform: scale(1);
-}
+@media (max-width: 760px) {
+    .guia {
+        width: 280px;
+        height: 600px;
+        flex-direction: column-reverse;
+    }
 
-#nomeGuia {
-    font-size: 30px;
-    font-weight: 600;
+    .infoGuia {
+        gap: 10px;
+    }
+
+    .descGuia {
+        width: 280px;
+    }
+
+    .ftGuia > img {
+        max-width: 280px;
+        max-height: 280px;
+    }
+
+    .botao {
+        font-size: 16px;
+    }
 }

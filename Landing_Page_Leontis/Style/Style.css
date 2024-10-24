@@ -10,33 +10,34 @@ html {
 body {
     background-color: #F5E0D4;
 }
- 
+
 * {
     font-family: quicksand;
     font-weight: 500;
     margin: 0%;
     padding: 0%;
 }
+
+::-webkit-scrollbar{
+    display: none;
+}
  
 .assunto {
     width: 100vw;
     height: 100vh;
 }
- 
+
+/* navbar utilizada na landing page */
 #navbar {
     width: 100vw;
     height: 70px;
     background-color: #7C3939;
     position: fixed;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     box-shadow: 0px 0px 15px 0px black;
     z-index: 100;
     transition: 0.5s;
-}
- 
-::-webkit-scrollbar{
-    display: none;
 }
  
 #leon {
@@ -80,8 +81,7 @@ body {
     box-shadow: 0px 0px 8px 0px black;
     transform: scale(1.03);
 }
- 
- 
+
 /* Nossos Contatos */
 #nossosCont{
     width: 1536px;
@@ -176,4 +176,3 @@ body {
     color: #F5E0D4 ;
     transition: 0.5s;
 }
- 

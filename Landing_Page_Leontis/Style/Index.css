@@ -356,8 +356,10 @@ span .titulo{
     position: relative;
     text-align: center;
     bottom: 350px;
-    left: 62rem;
-    width: fit-content;
+    left: 24rem;
     flex-wrap: wrap;
     color: #F5E0D4;
 }
+ 
+ 
+ 

@@ -10,17 +10,21 @@
 </head>
 <body>
     <nav id="navbar">
-        <a href="Index.html" id="leon"><img src="Resources/leon.png" ></a>
-
+        <div id="left">
+            <a href="Index.html" id="leon"><img src="Resources/leon.png"></a>
+        </div>
+ 
         <div id="links">
-            <a href="CadastroMuseu.html">Cadastro de Museu</a>
-            <a href="Login.html">Fazer Login</a>
+            <a href="SobreApp.html">Sobre o App</a>
+            <a href="SobreEmpresa.html">Sobre a Empresa</a>
+            <a href="#nossosCont">Nossos Contatos</a>
         </div>
     </nav>
 
     <form>
         <div id="formulario">
             <h1 id="titCadastro">Cadastro de Museu:</h1>
+            
             <div id="nome">
                 <label for="nome">Nome do Museu:</label>
                 <input type="text" name="nomeMuseu" id="nomeMuseu" size="45" required>
@@ -48,45 +52,54 @@
 
             <div id="diasFunc">
                 <h2 id="titDiasFunc">Dias de Funcionamento:</h2>
-                <div class="dias">
-                    <h3 class="subtit">Dias</h3>
-                    <div class="dia"><input type="checkbox" id="dom"><p>Domingo</p></div>
-                    <div class="dia"><input type="checkbox" id="seg"><p>Segunda</p></div>
-                    <div class="dia"><input type="checkbox" id="ter"><p>Terça</p></div>
-                    <div class="dia"><input type="checkbox" id="qua"><p>Quarta</p></div>
-                    <div class="dia"><input type="checkbox" id="qui"><p>Quinta</p></div>
-                    <div class="dia"><input type="checkbox" id="sex"><p>Sexta</p></div>
-                    <div class="dia"><input type="checkbox" id="sab"><p>Sábado</p></div>
+
+                <div class="diaSemana">
+                    <p>Domingo</p>
+                    <input type="time" name="hrAbertura" class="hrAbertura">
+                    <input type="time" name="hrFechamento" class="hrFechamento">
+                    <input type="number" name="valorIngresso" class="valorIngresso">
                 </div>
-                <div class="abertura">
-                    <h3 class="subtit">Abertura</h3>
-                    <input type="time" name="" id="" class="hrAbertura">
-                    <input type="time" name="" id="" class="hrAbertura">
-                    <input type="time" name="" id="" class="hrAbertura">
-                    <input type="time" name="" id="" class="hrAbertura">
-                    <input type="time" name="" id="" class="hrAbertura">
-                    <input type="time" name="" id="" class="hrAbertura">
-                    <input type="time" name="" id="" class="hrAbertura">
+
+                <div class="diaSemana">
+                    <p>Segunda</p>
+                    <input type="time" name="hrAbertura" class="hrAbertura">
+                    <input type="time" name="hrFechamento" class="hrFechamento">
+                    <input type="number" name="valorIngresso" class="valorIngresso">
                 </div>
-                <div class="fechamento">
-                    <h3 class="subtit">Fechamento</h3>
-                    <input type="time" name="" id="" class="hrFechamento">
-                    <input type="time" name="" id="" class="hrFechamento">
-                    <input type="time" name="" id="" class="hrFechamento">
-                    <input type="time" name="" id="" class="hrFechamento">
-                    <input type="time" name="" id="" class="hrFechamento">
-                    <input type="time" name="" id="" class="hrFechamento">
-                    <input type="time" name="" id="" class="hrFechamento">
+
+                <div class="diaSemana">
+                    <p>Terça</p>
+                    <input type="time" name="hrAbertura" class="hrAbertura">
+                    <input type="time" name="hrFechamento" class="hrFechamento">
+                    <input type="number" name="valorIngresso" class="valorIngresso">
                 </div>
-                <div class="valorIngresso">
-                    <h3 class="subtit">Valor Ingresso</h3>
-                    <input type="text" name="" id="" class="ingresso">
-                    <input type="text" name="" id="" class="ingresso">
-                    <input type="text" name="" id="" class="ingresso">
-                    <input type="text" name="" id="" class="ingresso">
-                    <input type="text" name="" id="" class="ingresso">
-                    <input type="text" name="" id="" class="ingresso">
-                    <input type="text" name="" id="" class="ingresso">
+
+                <div class="diaSemana">
+                    <p>Quarta</p>
+                    <input type="time" name="hrAbertura" class="hrAbertura">
+                    <input type="time" name="hrFechamento" class="hrFechamento">
+                    <input type="number" name="valorIngresso" class="valorIngresso">
+                </div>
+
+                <div class="diaSemana">
+                    <p>Quinta</p>
+                    <input type="time" name="hrAbertura" class="hrAbertura">
+                    <input type="time" name="hrFechamento" class="hrFechamento">
+                    <input type="number" name="valorIngresso" class="valorIngresso">
+                </div>
+
+                <div class="diaSemana">
+                    <p>Sexta</p>
+                    <input type="time" name="hrAbertura" class="hrAbertura">
+                    <input type="time" name="hrFechamento" class="hrFechamento">
+                    <input type="number" name="valorIngresso" class="valorIngresso">
+                </div>
+
+                <div class="diaSemana">
+                    <p>Sábado</p>
+                    <input type="time" name="hrAbertura" class="hrAbertura">
+                    <input type="time" name="hrFechamento" class="hrFechamento">
+                    <input type="number" name="valorIngresso" class="valorIngresso">
                 </div>
             </div>
 
