@@ -6,7 +6,7 @@ body {
     width: fit-content;
     height: fit-content;
     position: relative;
-    top: 12vh;
+    top: 90px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -77,8 +77,8 @@ body {
 }
 
 .ftArtista {
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
     border: 2px solid #282525;
     border-radius: 10px;
 }
