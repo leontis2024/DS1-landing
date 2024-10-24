@@ -19,8 +19,8 @@ body {
 }
  
 .assunto {
-    width: 1536px;
-    height: 730px;
+    width: 100vw;
+    height: 100vh;
 }
  
 #navbar {

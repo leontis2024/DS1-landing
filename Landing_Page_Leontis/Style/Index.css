@@ -99,9 +99,6 @@
 }
  
 /* Nossas Funcionalidades */
-#sobreApp {
-    background-color: #EEB08C;
-}
  
 #tituloApp {
     width: fit-content;
@@ -112,199 +109,121 @@
     font-weight: 600;
 }
  
-#funcionalidades {
-    width: 100vw;
-    min-height: 600px;
+/* imagens dos celulares */
+#imgScanner{
+    z-index: 1;
     position: relative;
-    top: 80px;
-    padding: 20px 0px;
-    overflow:auto;
-    white-space: nowrap;
+    height: 400px;
+    left: 50px;
+    top: 25px;
+    transition: 1s;
 }
- 
-#funcionalidades ::-webkit-scrollbar {
-    display: none;
-}
- 
-.funcao {
-    vertical-align: top;
-    width: 400px;
+#imgHome{
+    z-index: 3;
+    position: relative;
     height: 500px;
-    margin: 0px 20px;
-    border-radius: 30px;
-    display: inline-block;
-    transition: 0.5s;
+    left: 150px;
+    transition: 1s;
 }
- 
-.funcao:hover {
-    transform: scale(1.01);
-    box-shadow: 0px 0px 15px 0px #7C3939;
-}
- 
-.funcao {
-    width: 210px;
+#imgTour{
+    position: relative;
+    z-index: 2;
     height: 400px;
+    left: 320px;
+    top: 25px;
+    transition: 1s;
 }
- 
-.imagensCarrossel {
-    border-radius: 7%;
-    cursor: pointer;
-    width: 210px;
+/* transições */
+#imgScanner:hover{
+    z-index: 5;
+    height: 500px;
+    top: 0px;
+    transition: 1s;
+}
+#imgScanner:hover~#imgHome{
     height: 400px;
+    top: 25px;
+    left: 290px;
+    transition: 1s;
 }
- 
-.funcionalidades {
+#imgScanner:hover~#imgTour{
+    left: 390px;
+    transition: 1s;
+}
+#imgScanner:hover~.home{
+    opacity: 0%;
+    transition: 1s;
+}
+#imgScanner:hover~.scanner{
+    opacity: 100%;
+    transition: 1s;
+}
+#imgTour:hover{
+    z-index:5;
+    height: 500px;
+    top: 0px;
+    transition: 1s;
+}
+#imgTour:hover~#imgHome{
+    height: 400px;
+    top: 25px;
+    left: 120px;
+    transition: 1s;
+}
+#imgTour:hover~.home{
+    opacity: 0%;
+    transition: 1s;
+}
+#imgTour:hover~.tour{
+    opacity: 100%;
+    transition: 1s;
+}
+/* classes dos textos */
+.home{
+    background-color: chartreuse;
+    opacity: 100%;
+    transition: 1s;
+}
+.scanner{
+    background-color: rgb(255, 0, 195);
+    opacity: 0%;
+    transition: 1s;
+}
+.tour{
+    background-color: rgb(251, 255, 0);
+    opacity: 0%;
+    transition: 1s;
+}
+
+/* MODELO DO KOJI*/
+.titulo {
+    width: fit-content;
+    top: 125px;
+    font-size: 50px;
+    font-weight: 600;
+    left: 51rem;
     position: relative;
-    top: 20px;
 }
- 
- 
-/* Escondendo o checkbox */
-input[type="radio"] {
-    display: none;
+span .titulo{
+    left: 11rem;
 }
- 
-/* Escondendo a mensagem que irá aparecer após clicar no chekbox invisível */
- 
- 
-/* Escondendo as descrições inicialmente */
-#informacoes1, #informacoes2, #informacoes3, #informacoes4, #informacoes5, #informacoes6 {
-    display: none;
-}
- 
-/* Exibindo a descrição correspondente quando o radio está marcado */
-input[type="radio"]:checked + label + #informacoes1 {
-    display: block;
-}
- 
-input[type="radio"]:checked + label + #informacoes2 {
-    display: block;
-}
- 
-input[type="radio"]:checked + label + #informacoes3 {
-    display: block;
-}
- 
-input[type="radio"]:checked + label + #informacoes4 {
-    display: block;
-}
- 
-input[type="radio"]:checked + label + #informacoes5 {
-    display: block;
-}
- 
-input[type="radio"]:checked + label + #informacoes6 {
-    display: block;
-}
- 
-/* Selecionar qualquer input com o name 'grupoFuncao' */
- 
- 
-/* Tevemos ter uma label no html para que o código acima funcione */
-/* Em HTML, a tag <label> é usada para definir rótulos (labels) para elementos de formulário, como caixas de texto, botões de rádio, caixas de seleção, etc.  */
- 
-#informacoes1 {
+.texto {
+    border-left: solid 5px #7C3939;
+    width: 36vw;
+    height: fit-content;
+    padding: 20px;
+    text-align: justify;
     position: relative;
-    display: none;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    white-space: wrap;
-    border-radius: 9px;
-    bottom: 250px;
-    left: 100px;
-    background-color: #F5E0D4;
-    padding: 30px;
-    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
-    ;
-    /* box-shadow: offset-x define a distancia horizontal da sombra) offset-y (define a distancia vertical da sombra) blur-radius (define o nível de desfoque da sombra) spread-radius (define o quanto a borda deve crescer ou diminuir) color (cor da sombra)*/
+    left: 50rem;
+    top: 175px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
- 
-#informacoes2 {
-    position: relative;
-    display: none;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    white-space: wrap;
-    border-radius: 9px;
-    bottom: 250px;
-    left: 100px;
-    background-color: #F5E0D4;
-    padding: 30px;
-    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
- 
- 
- 
-}
- 
-#informacoes3 {
-    position: relative;
-    display: none;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    white-space: wrap;
-    border-radius: 9px;
-    bottom: 250px;
-    left: 100px;
-    background-color: #F5E0D4;
-    padding: 30px;
-    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
- 
- 
- 
-}
- 
-#informacoes4 {
-    position: relative;
-    display: none;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    white-space: wrap;
-    border-radius: 9px;
-    bottom: 250px;
-    left: 100px;
-    background-color: #F5E0D4;
-    padding: 30px;
-    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
- 
- 
- 
-}
- 
-#informacoes5 {
-    position: relative;
-    display: none;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    white-space: wrap;
-    border-radius: 9px;
-    bottom: 250px;
-    left: 100px;
-    background-color: #F5E0D4;
-    padding: 30px;
-    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
- 
- 
-}
- 
-#informacoes6 {
-    position: relative;
-    display: none;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    white-space: wrap;
-    border-radius: 9px;
-    bottom: 250px;
-    left: 100px;
-    background-color: #F5E0D4;
-    padding: 30px;
-    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
- 
+.texto > h2 {
+    margin-top: 5vh;
+    font-weight: 600;
 }
  
 /*Sobre o App */
@@ -349,16 +268,16 @@ input[type="radio"]:checked + label + #informacoes6 {
 /*Sobre a Empresa */
  
 #sobreEmp {
-    background-color: black;
+    background-image: url('../Resources/mockupVisus.png ');
+    background-size: cover;
 }
 
-.mockup{
-    width: 1536px;
-    height: 730px;
-    position:absolute;
-    opacity: 0.33;
-    z-index: 0;
-    background-size: cover;
+#imgVisus{
+    width: 547.5px;
+    position:relative;
+    left: 55rem;
+    bottom: 200px;
+    border-radius: 30px;
 }
 
 #txtBoxEmp{
@@ -367,21 +286,20 @@ input[type="radio"]:checked + label + #informacoes6 {
 }
  
 #emp {
-    color:rgb(40, 238, 50);
+    color:#6DC83C;
 }
  
 .titulo {
-    color:rgb(40, 238, 50);
     width: fit-content;
     top: 120px;
     font-size: 50px;
     font-weight: 600;
     position: relative;
-    left: 11rem;
+    left: 8.7rem;
 }
  
 #info {
-    border-left: solid 5px rgb(40, 238, 50);
+    border-left: solid 5px #6DC83C;
     width: 30vw;
     height: fit-content;
     padding: 20px;
@@ -389,6 +307,7 @@ input[type="radio"]:checked + label + #informacoes6 {
     position: relative;
     top: 170px;
     display: flex;
+    text-align: justify;
     flex-direction: column;
     align-items: center;
     color: whitesmoke;
@@ -396,7 +315,7 @@ input[type="radio"]:checked + label + #informacoes6 {
  
 #info > h2 {
     margin-top: 5vh;
-    color: rgb(40, 238, 50);
+    color: #6DC83C;
     font-weight: 600;
 }
  /* Integrantes */
@@ -425,15 +344,20 @@ input[type="radio"]:checked + label + #informacoes6 {
     position: relative;
     text-align: center;
     bottom: 350px;
-    left: 24rem;
+    left: 64rem;
     flex-wrap: wrap;
     color: #F5E0D4;
+    list-style: none;
+    width: fit-content;
 }
+
+
 .integrantes h1 {
     position: relative;
     text-align: center;
     bottom: 350px;
-    left: 24rem;
+    left: 62rem;
+    width: fit-content;
     flex-wrap: wrap;
     color: #F5E0D4;
 }
