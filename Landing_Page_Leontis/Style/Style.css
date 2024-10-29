@@ -84,13 +84,15 @@ body {
 
 /* Nossos Contatos */
 #nossosCont{
-    width: 1536px;
+    width: 100vw;
     height: 146px;
     background-color: #202933;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+
 }
  
 #nossosCont>hr{
@@ -175,4 +177,17 @@ body {
 .linksFooter > a:hover{
     color: #F5E0D4 ;
     transition: 0.5s;
+}
+
+@media (max-width:768px){
+    #nossosCont{
+        height: 35vh;
+    }
+}
+
+@media (max-width:428px){
+    #nossosCont{
+        height: 70vh;
+        flex-direction: column;
+    }
 }

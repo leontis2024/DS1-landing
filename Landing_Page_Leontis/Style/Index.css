@@ -99,214 +99,119 @@
 }
  
 /* Nossas Funcionalidades */
-#sobreApp {
-    background-color: #EEB08C;
-}
- 
-#tituloApp {
-    width: fit-content;
+/* IMAGENS */
+.imagens{
     position: relative;
     top: 100px;
-    left: 90px;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+.imagens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+#scan,#tour{
+    height: 380px;
+    position: relative;
+    transition: 1s;
+}
+#home{
+    z-index: 3;
+    height: 420px;
+    margin-left: -75px;
+    transition: 1s;
+}
+#tour{
+    z-index: 2;
+    margin-left: -75px;
+}
+#scan{
+    z-index: 1;
+}
+
+/* TEXTOS */
+.titulo {
+    width: fit-content;
+    bottom: 870px;
     font-size: 50px;
     font-weight: 600;
-}
- 
-#funcionalidades {
-    width: 100vw;
-    min-height: 600px;
+    left: 2rem;
     position: relative;
-    top: 80px;
-    padding: 20px 0px;
-    overflow:auto;
-    white-space: nowrap;
 }
- 
-#funcionalidades ::-webkit-scrollbar {
-    display: none;
+.texto {
+    border-left: solid 5px #7C3939;
+    width: 36vw;
+    height: fit-content;
+    text-align: justify;
+    position: relative;
+    left: 1rem;
+    bottom: 850px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
 }
- 
-.funcao {
-    vertical-align: top;
-    width: 400px;
+.texto > h2 {
+    margin-top: 5vh;
+    font-weight: 600;
+}
+
+#textoHome{
+    /* position: relative; */
+    opacity: 100%;
+    left: 50vw;
+    top: 600px;
+    transition: 1s;
+}
+#textoScanner{
+    /* position: relative; */
+    opacity: 0%;
+    left: 50vw;
+    top: 350px;
+    transition: 1s;
+}
+#textoTour{
+    /* position: relative; */
+    left: 50vw;
+    top: 160px;
+    opacity: 0%;
+    transition: 1s;
+}
+
+/* TRANSIÇÕES */
+#tour:hover{
+    z-index: 3;
     height: 500px;
-    margin: 0px 20px;
-    border-radius: 30px;
-    display: inline-block;
-    transition: 0.5s;
+    margin-left: 10px;
 }
- 
-.funcao:hover {
-    transform: scale(1.01);
-    box-shadow: 0px 0px 15px 0px #7C3939;
+#scan:hover{
+    z-index: 3;
+    height: 500px;
+    margin-right: 80px;
 }
- 
-.funcao {
-    width: 210px;
-    height: 400px;
+#scan:hover~#home{
+    z-index: 2;
 }
- 
-.imagensCarrossel {
-    border-radius: 7%;
-    cursor: pointer;
-    width: 210px;
-    height: 400px;
+#scan:hover~#tour{
+    z-index: 1;
 }
- 
-.funcionalidades {
-    position: relative;
-    top: 20px;
+
+.imagens:has(#tour:hover) ~ #textoTour {
+    opacity: 100%;
 }
- 
- 
-/* Escondendo o checkbox */
-input[type="radio"] {
-    display: none;
+.imagens:has(#tour:hover) ~ #textoHome {
+    opacity: 0;
 }
- 
-/* Escondendo a mensagem que irá aparecer após clicar no chekbox invisível */
- 
- 
-/* Escondendo as descrições inicialmente */
-#informacoes1, #informacoes2, #informacoes3, #informacoes4, #informacoes5, #informacoes6 {
-    display: none;
+
+.imagens:has(#scan:hover) ~#textoScanner{
+    opacity: 100%;
 }
- 
-/* Exibindo a descrição correspondente quando o radio está marcado */
-input[type="radio"]:checked + label + #informacoes1 {
-    display: block;
+.imagens:has(#scan:hover) ~ #textoHome{
+    opacity: 0;
 }
- 
-input[type="radio"]:checked + label + #informacoes2 {
-    display: block;
-}
- 
-input[type="radio"]:checked + label + #informacoes3 {
-    display: block;
-}
- 
-input[type="radio"]:checked + label + #informacoes4 {
-    display: block;
-}
- 
-input[type="radio"]:checked + label + #informacoes5 {
-    display: block;
-}
- 
-input[type="radio"]:checked + label + #informacoes6 {
-    display: block;
-}
- 
-/* Selecionar qualquer input com o name 'grupoFuncao' */
- 
- 
-/* Tevemos ter uma label no html para que o código acima funcione */
-/* Em HTML, a tag <label> é usada para definir rótulos (labels) para elementos de formulário, como caixas de texto, botões de rádio, caixas de seleção, etc.  */
- 
-#informacoes1 {
-    position: relative;
-    display: none;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    white-space: wrap;
-    border-radius: 9px;
-    bottom: 250px;
-    left: 100px;
-    background-color: #F5E0D4;
-    padding: 30px;
-    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
-    ;
-    /* box-shadow: offset-x define a distancia horizontal da sombra) offset-y (define a distancia vertical da sombra) blur-radius (define o nível de desfoque da sombra) spread-radius (define o quanto a borda deve crescer ou diminuir) color (cor da sombra)*/
-}
- 
-#informacoes2 {
-    position: relative;
-    display: none;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    white-space: wrap;
-    border-radius: 9px;
-    bottom: 250px;
-    left: 100px;
-    background-color: #F5E0D4;
-    padding: 30px;
-    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
- 
- 
- 
-}
- 
-#informacoes3 {
-    position: relative;
-    display: none;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    white-space: wrap;
-    border-radius: 9px;
-    bottom: 250px;
-    left: 100px;
-    background-color: #F5E0D4;
-    padding: 30px;
-    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
- 
- 
- 
-}
- 
-#informacoes4 {
-    position: relative;
-    display: none;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    white-space: wrap;
-    border-radius: 9px;
-    bottom: 250px;
-    left: 100px;
-    background-color: #F5E0D4;
-    padding: 30px;
-    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
- 
- 
- 
-}
- 
-#informacoes5 {
-    position: relative;
-    display: none;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    white-space: wrap;
-    border-radius: 9px;
-    bottom: 250px;
-    left: 100px;
-    background-color: #F5E0D4;
-    padding: 30px;
-    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
- 
- 
-}
- 
-#informacoes6 {
-    position: relative;
-    display: none;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    white-space: wrap;
-    border-radius: 9px;
-    bottom: 250px;
-    left: 100px;
-    background-color: #F5E0D4;
-    padding: 30px;
-    box-shadow: 2px -1px 10px 15px rgb(181, 127, 91);
- 
-}
- 
+
 /*Sobre o App */
  
 #sobreApp{
@@ -335,7 +240,6 @@ input[type="radio"]:checked + label + #informacoes6 {
     font-size: 70px;
     width: 40vw;  
     display: flex;
-    justify-content: center;
 }
  
 .imgRomero{
@@ -349,16 +253,16 @@ input[type="radio"]:checked + label + #informacoes6 {
 /*Sobre a Empresa */
  
 #sobreEmp {
-    background-color: black;
+    background-image: url('../Resources/mockupVisus.png ');
+    background-size: cover;
 }
 
-.mockup{
-    width: 1536px;
-    height: 730px;
-    position:absolute;
-    opacity: 0.33;
-    z-index: 0;
-    background-size: cover;
+#imgVisus{
+    width: 547.5px;
+    position:relative;
+    left: 55rem;
+    bottom: 200px;
+    border-radius: 30px;
 }
 
 #txtBoxEmp{
@@ -367,21 +271,20 @@ input[type="radio"]:checked + label + #informacoes6 {
 }
  
 #emp {
-    color:rgb(40, 238, 50);
+    color:#6DC83C;
 }
  
-.titulo {
-    color:rgb(40, 238, 50);
+.tituloEmp {
     width: fit-content;
     top: 120px;
     font-size: 50px;
     font-weight: 600;
     position: relative;
-    left: 11rem;
+    left: 8.7rem;
 }
  
 #info {
-    border-left: solid 5px rgb(40, 238, 50);
+    border-left: solid 5px #6DC83C;
     width: 30vw;
     height: fit-content;
     padding: 20px;
@@ -389,6 +292,7 @@ input[type="radio"]:checked + label + #informacoes6 {
     position: relative;
     top: 170px;
     display: flex;
+    text-align: justify;
     flex-direction: column;
     align-items: center;
     color: whitesmoke;
@@ -396,45 +300,66 @@ input[type="radio"]:checked + label + #informacoes6 {
  
 #info > h2 {
     margin-top: 5vh;
-    color: rgb(40, 238, 50);
+    color: #6DC83C;
     font-weight: 600;
 }
  /* Integrantes */
 .integrantes{
     z-index: 1;
-    height: 520PX;
-    width: 1536px;
+    height: 77vh;
+    width: 100vw;
     background-color: #7C3939;
 }
- 
+
 .visusIntegrantes{
-    height: 520px;
-}
- 
-.logointegrantes{
-    height: 120px;
-    width: 120px;
-    box-shadow: 0px 0px 3px 0px #000000;
-    border-radius: 10000px;
-    position: relative;
-    bottom: 360px;
-    left: 20.6rem;
+    height: 77vh;
 }
 
-.integrantes ul {
+.listaIntegrantes{
     position: relative;
-    text-align: center;
-    bottom: 350px;
-    left: 24rem;
-    flex-wrap: wrap;
-    color: #F5E0D4;
+    bottom: 70vh;
+    left: 67vw;
+    width: fit-content;
+    color: #F5E0D4;    
 }
-.integrantes h1 {
-    position: relative;
-    top: 2530px;
-    left: 1000px;
-    margin-bottom: 10px;
+
+.listaIntegrantes img{
+    height: 120px;
+    width: fit-content;
+    box-shadow: 0px 0px 3px 0px #000000;
+    border-radius: 100px;
+    margin-left: 156px;
 }
- 
- 
- 
+
+.listaIntegrantes ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.listaIntegrantes h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+@media(max-width:1536px){
+
+    .listaIntegrantes{
+        margin-left: 1.3vw;
+    }
+
+    .listaIntegrantes ul{
+        font-size: 15px;
+    }
+
+    .listaIntegrantes h1{
+        font-size: 25px;
+    }
+
+    .listaIntegrantes img{
+        margin-left: 4.6vw;
+        margin-top: 50px;
+    }
+}
