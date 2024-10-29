@@ -99,133 +99,119 @@
 }
  
 /* Nossas Funcionalidades */
- 
-#tituloApp {
-    width: fit-content;
+/* IMAGENS */
+.imagens{
     position: relative;
     top: 100px;
-    left: 90px;
-    font-size: 50px;
-    font-weight: 600;
+    width: 50vw;
+    display: flex;
+    align-items: center;
 }
- 
-/* imagens dos celulares */
-#imgScanner{
-    z-index: 1;
+.imagens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+#scan,#tour{
+    height: 380px;
     position: relative;
-    height: 400px;
-    left: 50px;
-    top: 25px;
     transition: 1s;
 }
-#imgHome{
+#home{
     z-index: 3;
-    position: relative;
-    height: 500px;
-    left: 150px;
+    height: 420px;
+    margin-left: -75px;
     transition: 1s;
 }
-#imgTour{
-    position: relative;
+#tour{
     z-index: 2;
-    height: 400px;
-    left: 320px;
-    top: 25px;
-    transition: 1s;
+    margin-left: -75px;
 }
-/* transições */
-#imgScanner:hover{
-    z-index: 5;
-    height: 500px;
-    top: 0px;
-    transition: 1s;
-}
-#imgScanner:hover~#imgHome{
-    height: 400px;
-    top: 25px;
-    left: 290px;
-    transition: 1s;
-}
-#imgScanner:hover~#imgTour{
-    left: 390px;
-    transition: 1s;
-}
-#imgScanner:hover~.home{
-    opacity: 0%;
-    transition: 1s;
-}
-#imgScanner:hover~.scanner{
-    opacity: 100%;
-    transition: 1s;
-}
-#imgTour:hover{
-    z-index:5;
-    height: 500px;
-    top: 0px;
-    transition: 1s;
-}
-#imgTour:hover~#imgHome{
-    height: 400px;
-    top: 25px;
-    left: 120px;
-    transition: 1s;
-}
-#imgTour:hover~.home{
-    opacity: 0%;
-    transition: 1s;
-}
-#imgTour:hover~.tour{
-    opacity: 100%;
-    transition: 1s;
-}
-/* classes dos textos */
-.home{
-    background-color: chartreuse;
-    opacity: 100%;
-    transition: 1s;
-}
-.scanner{
-    background-color: rgb(255, 0, 195);
-    opacity: 0%;
-    transition: 1s;
-}
-.tour{
-    background-color: rgb(251, 255, 0);
-    opacity: 0%;
-    transition: 1s;
+#scan{
+    z-index: 1;
 }
 
-/* MODELO DO KOJI*/
+/* TEXTOS */
 .titulo {
     width: fit-content;
-    top: 125px;
+    bottom: 870px;
     font-size: 50px;
     font-weight: 600;
-    left: 51rem;
+    left: 2rem;
     position: relative;
-}
-span .titulo{
-    left: 11rem;
 }
 .texto {
     border-left: solid 5px #7C3939;
     width: 36vw;
     height: fit-content;
-    padding: 20px;
     text-align: justify;
     position: relative;
-    left: 50rem;
-    top: 175px;
+    left: 1rem;
+    bottom: 850px;
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .texto > h2 {
     margin-top: 5vh;
     font-weight: 600;
 }
- 
+
+#textoHome{
+    /* position: relative; */
+    opacity: 100%;
+    left: 50vw;
+    top: 600px;
+    transition: 1s;
+}
+#textoScanner{
+    /* position: relative; */
+    opacity: 0%;
+    left: 50vw;
+    top: 350px;
+    transition: 1s;
+}
+#textoTour{
+    /* position: relative; */
+    left: 50vw;
+    top: 160px;
+    opacity: 0%;
+    transition: 1s;
+}
+
+/* TRANSIÇÕES */
+#tour:hover{
+    z-index: 3;
+    height: 500px;
+    margin-left: 10px;
+}
+#scan:hover{
+    z-index: 3;
+    height: 500px;
+    margin-right: 80px;
+}
+#scan:hover~#home{
+    z-index: 2;
+}
+#scan:hover~#tour{
+    z-index: 1;
+}
+
+.imagens:has(#tour:hover) ~ #textoTour {
+    opacity: 100%;
+}
+.imagens:has(#tour:hover) ~ #textoHome {
+    opacity: 0;
+}
+
+.imagens:has(#scan:hover) ~#textoScanner{
+    opacity: 100%;
+}
+.imagens:has(#scan:hover) ~ #textoHome{
+    opacity: 0;
+}
+
 /*Sobre o App */
  
 #sobreApp{
@@ -254,7 +240,6 @@ span .titulo{
     font-size: 70px;
     width: 40vw;  
     display: flex;
-    justify-content: center;
 }
  
 .imgRomero{
@@ -289,7 +274,7 @@ span .titulo{
     color:#6DC83C;
 }
  
-.titulo {
+.tituloEmp {
     width: fit-content;
     top: 120px;
     font-size: 50px;
@@ -321,45 +306,60 @@ span .titulo{
  /* Integrantes */
 .integrantes{
     z-index: 1;
-    height: 520PX;
-    width: 1536px;
+    height: 77vh;
+    width: 100vw;
     background-color: #7C3939;
 }
- 
+
 .visusIntegrantes{
-    height: 520px;
-}
- 
-.logointegrantes{
-    height: 120px;
-    width: 120px;
-    box-shadow: 0px 0px 3px 0px #000000;
-    border-radius: 10000px;
-    position: relative;
-    bottom: 360px;
-    left: 20.6rem;
+    height: 77vh;
 }
 
-.integrantes ul {
+.listaIntegrantes{
     position: relative;
-    text-align: center;
-    bottom: 350px;
-    left: 64rem;
-    flex-wrap: wrap;
-    color: #F5E0D4;
-    list-style: none;
+    bottom: 70vh;
+    left: 67vw;
     width: fit-content;
+    color: #F5E0D4;    
 }
 
-
-.integrantes h1 {
-    position: relative;
-    text-align: center;
-    bottom: 350px;
-    left: 24rem;
-    flex-wrap: wrap;
-    color: #F5E0D4;
+.listaIntegrantes img{
+    height: 120px;
+    width: fit-content;
+    box-shadow: 0px 0px 3px 0px #000000;
+    border-radius: 100px;
+    margin-left: 156px;
 }
- 
- 
- 
+
+.listaIntegrantes ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.listaIntegrantes h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+@media(max-width:1536px){
+
+    .listaIntegrantes{
+        margin-left: 1.3vw;
+    }
+
+    .listaIntegrantes ul{
+        font-size: 15px;
+    }
+
+    .listaIntegrantes h1{
+        font-size: 25px;
+    }
+
+    .listaIntegrantes img{
+        margin-left: 4.6vw;
+        margin-top: 50px;
+    }
+}
