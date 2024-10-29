@@ -136,7 +136,7 @@ body {
 @media (max-width: 760px) {
     .guia {
         width: 280px;
-        height: 600px;
+        height: 700px;
         flex-direction: column-reverse;
     }
 
