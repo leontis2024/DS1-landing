@@ -6,7 +6,7 @@ body {
     width: fit-content;
     height: fit-content;
     position: relative;
-    top: 12vh;
+    top: 90px;
     margin: auto;
     display: flex;
     justify-content: space-between;
