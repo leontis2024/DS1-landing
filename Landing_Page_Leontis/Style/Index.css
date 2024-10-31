@@ -99,13 +99,19 @@
 }
  
 /* Nossas Funcionalidades */
+
+#nossasFunc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr;
+    grid-template-areas: "imagens texto";
+}
+
 /* IMAGENS */
 .imagens{
-    position: relative;
-    top: 100px;
-    width: 50vw;
     display: flex;
     align-items: center;
+    grid-area: imagens;
 }
 .imagens{
     display: flex;
@@ -133,9 +139,13 @@
 }
 
 /* TEXTOS */
+
+.textosFunc{
+    grid-area: texto;
+}
+
 .titulo {
     width: fit-content;
-    bottom: 870px;
     font-size: 50px;
     font-weight: 600;
     left: 2rem;
@@ -148,8 +158,8 @@
     text-align: justify;
     position: relative;
     left: 1rem;
-    bottom: 850px;
     font-size: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -159,23 +169,18 @@
 }
 
 #textoHome{
-    /* position: relative; */
+    position: relative;
     opacity: 100%;
-    left: 50vw;
-    top: 600px;
+    top: 29vh;
     transition: 1s;
 }
 #textoScanner{
-    /* position: relative; */
     opacity: 0%;
-    left: 50vw;
-    top: 350px;
     transition: 1s;
 }
 #textoTour{
-    /* position: relative; */
-    left: 50vw;
-    top: 160px;
+    position: relative;
+    bottom:29vh;
     opacity: 0%;
     transition: 1s;
 }
@@ -198,17 +203,17 @@
     z-index: 1;
 }
 
-.imagens:has(#tour:hover) ~ #textoTour {
+.imagens:has(#tour:hover) ~ .textosFunc #textoTour {
     opacity: 100%;
 }
-.imagens:has(#tour:hover) ~ #textoHome {
+.imagens:has(#tour:hover) ~ .textosFunc #textoHome {
     opacity: 0;
 }
 
-.imagens:has(#scan:hover) ~#textoScanner{
+.imagens:has(#scan:hover) ~.textosFunc #textoScanner{
     opacity: 100%;
 }
-.imagens:has(#scan:hover) ~ #textoHome{
+.imagens:has(#scan:hover) ~ .textosFunc #textoHome{
     opacity: 0;
 }
 

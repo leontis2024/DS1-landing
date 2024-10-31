@@ -244,9 +244,8 @@
  
 .imagemOds{
     position: relative;
-    float: right;
-    bottom: 360px;
-    right: 13rem;
+    top: 30vh;
+    left: 25vw;
     width: 400px;
     height: 400px;
     box-shadow: black 5px 5px 15px 0px;
@@ -286,7 +285,7 @@
     width:  300px;
 }
 
-@media (max-width:768px){
+@media (max-width:1535px){
 
     #aplicativo h1{
         font-size: 48px
@@ -302,7 +301,7 @@
     }
     
     .diferenciais{
-        height: 1850px;
+        height: 170vh;
     }
 
     .diferenciais h1{
@@ -326,7 +325,7 @@
 
     .mockupLeontis{
         position: static;
-        width: 80vw; 
+        width: 40vw; 
         height: auto;
         display: flex;
         align-self: center;
@@ -355,21 +354,20 @@
     }
 
     .cardsDisplay{
-        grid-template-columns: 1fr;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin-left: 0;
-        gap: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4vw;
+        margin: 5vh 0vw 5vh 0vw;
     }
 
-    #historia, #culxTec, #susCul{
+    #historia, #culxTec, #susCult{
         flex-direction: column;
+        display: flex;
+        align-items: center;
     }
 
     #historia img{
         height: auto;
-        width: 90vw;
+        width: 60vw;
     }
 
     #historia #explicacao{
@@ -390,12 +388,9 @@
 
     .imagemOds{
         position: static;
-        width: 60vw;
+        width: 30vw;
         height: auto;
-        float: none;
-        margin: 0;
-        display: flex;
-        justify-self: center;
+        margin: 0;  
     }
 
     #culxTec .info{
@@ -404,16 +399,38 @@
 
     .fotoObra{
         position: static;
-        width: 90vw;
+        width: 50vw;
         height: auto;
-        display: flex;
-        align-self: center;
         margin-bottom: 100px;
     }
  }
 
- @media (max-width:428px){
+ @media (max-width:768px){
+
+    .info, #txtBox{
+        font-size: 15px;
+    }
+
+    .imagemOds, .fotoObra{
+        height: 20vh;
+        width: auto;
+    }
+
+    .diferenciais{
+        height: 200vh;
+    }
+
+    .diferenciais h2 {
+        display: flex;
+        justify-self:center;
+        margin: 0;
+    }
+
     .titulo{
-        font-size: 35px;
+        font-size: 25px;
+    }
+
+    .cardsDisplay{
+        grid-template-columns: 1fr;
     }
  }
