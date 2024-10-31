@@ -279,7 +279,7 @@
     font-size: 50px;
 }
 
-#planosFuturos .cardsDisplay .cards{
+#planosFuturos .containerCards .cardsDisplay .cards{
     border-color: black;
     height: 200px;
     width:  300px;
@@ -359,6 +359,12 @@
         margin: 5vh 0vw 5vh 0vw;
     }
 
+    .containerCards{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
     #historia, #culxTec, #susCult{
         flex-direction: column;
         display: flex;
@@ -417,7 +423,7 @@
     }
 
     .diferenciais{
-        height: 200vh;
+        height: 250vh;
     }
 
     .diferenciais h2 {
