@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="Style/Style.css">
+    <link rel="stylesheet" href="Style/cadastroMuseu.css">
+    <link rel="shortcut icon" href="Resources/leon.png" type="image/jpg">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="left">
+            <a href="Index.html" id="leon"><img src="Resources/leon.png"></a>
+        </div>
+ 
+        <div id="links">
+            <a href="SobreApp.html">Sobre o App</a>
+            <a href="SobreEmpresa.html">Sobre a Empresa</a>
+            <a href="#nossosCont">Nossos Contatos</a>
+        </div>
+    </nav>
+
+    <form>
+        <div id="formulario">
+            <h1 id="titCadastro">Cadastro de Museu:</h1>
+            
+            <div id="nome">
+                <label for="nome">Nome do Museu:</label>
+                <input type="text" name="nomeMuseu" id="nomeMuseu" size="45" required>
+            </div>
+
+            <div id="inauguracao">
+                <label for="dtInauguracao">Inauguração:</label>
+                <input type="date" name="dtInauguracao" id="dtInauguracao" required>
+            </div>
+
+            <div id="tel">
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="telMuseu" id="telMuseu" placeholder="XX XXXXX-XXXX">
+            </div>
+
+            <div id="ftMuseu">
+                <label for="image">Imagem:</label>
+                <input type="file" name="image" id="image">
+            </div>
+
+            <div id="desc">
+                <label for="descricao">Descrição:</label>
+                <textarea name="descricao" id="descricao" cols="60" rows="5"></textarea>
+            </div>
+
+            <div id="diasFunc">
+                <h2 id="titDiasFunc">Dias de Funcionamento:</h2>
+
+                <div class="diaSemana">
+                    <p>Domingo</p>
+                    <input type="time" name="hrAbertura" class="hrAbertura">
+                    <input type="time" name="hrFechamento" class="hrFechamento">
+                    <input type="number" name="valorIngresso" class="valorIngresso">
+                </div>
+
+                <div class="diaSemana">
+                    <p>Segunda</p>
+                    <input type="time" name="hrAbertura" class="hrAbertura">
+                    <input type="time" name="hrFechamento" class="hrFechamento">
+                    <input type="number" name="valorIngresso" class="valorIngresso">
+                </div>
+
+                <div class="diaSemana">
+                    <p>Terça</p>
+                    <input type="time" name="hrAbertura" class="hrAbertura">
+                    <input type="time" name="hrFechamento" class="hrFechamento">
+                    <input type="number" name="valorIngresso" class="valorIngresso">
+                </div>
+
+                <div class="diaSemana">
+                    <p>Quarta</p>
+                    <input type="time" name="hrAbertura" class="hrAbertura">
+                    <input type="time" name="hrFechamento" class="hrFechamento">
+                    <input type="number" name="valorIngresso" class="valorIngresso">
+                </div>
+
+                <div class="diaSemana">
+                    <p>Quinta</p>
+                    <input type="time" name="hrAbertura" class="hrAbertura">
+                    <input type="time" name="hrFechamento" class="hrFechamento">
+                    <input type="number" name="valorIngresso" class="valorIngresso">
+                </div>
+
+                <div class="diaSemana">
+                    <p>Sexta</p>
+                    <input type="time" name="hrAbertura" class="hrAbertura">
+                    <input type="time" name="hrFechamento" class="hrFechamento">
+                    <input type="number" name="valorIngresso" class="valorIngresso">
+                </div>
+
+                <div class="diaSemana">
+                    <p>Sábado</p>
+                    <input type="time" name="hrAbertura" class="hrAbertura">
+                    <input type="time" name="hrFechamento" class="hrFechamento">
+                    <input type="number" name="valorIngresso" class="valorIngresso">
+                </div>
+            </div>
+
+            <div id="cnpj">
+                <label for="cnpjMuseu">Cnpj:</label>
+                <input type="text" name="cnpjMuseu" id="cnpjMuseu" required>
+            </div>
+
+            <div id="estado">
+                <label for="estadoMuseu">Estado:</label>
+                <select name="estadoMuseu" id="estadoMuseu" required size="4">
+                    <option value="acre">Acre</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="amapa">Amapá</option>
+                    <option value="amazonas">Amazonas</option>
+                    <option value="bahia">Bahia</option>
+                    <option value="ceara">Ceará</option>
+                    <option value="espirito santo">Espírito Santo</option>
+                    <option value="goias">Goiás</option>
+                    <option value="maranhao">Maranhão</option>
+                    <option value="matoGrosso">Mato Grosso</option>
+                    <option value="matoGrossoDoSul">Mato Grosso do Sul</option>
+                    <option value="minasGerais">Minas Gerais</option>
+                    <option value="para">Pará</option>
+                    <option value="paraiba">Paraíba</option>
+                    <option value="parana">Paraná</option>
+                    <option value="pernambuco">Pernambuco</option>
+                    <option value="piauí">Piauí</option>
+                    <option value="rioDeJaneiro">Rio de Janeiro</option>
+                    <option value="rioGrandeDoNorte">Rio Grande do Norte</option>
+                    <option value="rioGrandeDoSul">Rio Grande do Sul</option>
+                    <option value="rondonia">Rondônia</option>
+                    <option value="roraima">Roraima</option>
+                    <option value="santaCatarina">Santa Catarina</option>
+                    <option value="saoPaulo">São Paulo</option>
+                    <option value="sergipe">Sergipe</option>
+                    <option value="tocantins">Tocantins</option>
+                    <option value="distritoFederal">Distrito Federal</option>
+                </select>
+            </div>
+
+            <div id="cidade">
+                <label for="cidadeMuseu">Cidade:</label>
+                <input type="text" name="cidadeMuseu" id="cidadeMuseu" required>
+            </div>
+
+            <div id="cep">
+                <label for="cepMuseu">Cep:</label>
+                <input type="text" name="cepMuseu" id="cepMuseu" required>
+            </div>
+
+            <div id="rua">
+                <label for="ruaMuseu">Rua:</label>
+                <input type="text" name="ruaMuseu" id="ruaMuseu" required>
+            </div>
+
+            <div id="pontoRef">
+                <label for="pontoRefMuseu">Ponto de referência:</label>
+                <input type="text" name="pontoRefMuseu" id="pontoRefMuseu">
+            </div>
+            
+            <div id="finalizar">
+                <input type="submit" name="submit" id="submit" value="enviar" class="botao">
+                <input type="reset" name="reset" id="reset" class="botao">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

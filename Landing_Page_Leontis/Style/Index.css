@@ -1,0 +1,370 @@
+/* Início */
+#inicio {
+    background-color: #F5E0D4;
+}
+ 
+#txtBox {
+    width: 500px;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 170px;
+    left: 130px;
+}
+ 
+#tituloIni {
+    padding: 0px 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+ 
+#descIni {
+    margin: 20px 0px;
+    font-size: 30px;
+    text-align: center;
+}
+ 
+#botao {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: #7C3939;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 20px 0;
+}
+
+#login {
+    font-size: 20px;
+}
+ 
+#botao:hover {
+    transform: scale(1.02);
+}
+ 
+#botao:active {
+    transform: scale(1);
+}
+ 
+#login > a {
+    text-decoration: none;
+    color: #7C3939;
+}
+ 
+#ilustracao1 {
+    height: 500px;
+    width: 500px;
+    float: right;
+    position: relative;
+    bottom: 230px;
+    right: 180px;
+}
+ 
+#ilustracao1 > #img {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: black 5px 5px 15px 0px;
+    transition: 0.5s;
+}
+ 
+#ilustracao1 > #img:hover {
+    transform: scale(1.01);
+}
+ 
+#ilustracao1 > #img:nth-child(1) {
+    height: 400px;
+    left: 50px;
+}
+ 
+#ilustracao1 > #img:nth-child(2) {
+    height: 300px;
+    top: -250px;
+    left: 220px;
+}
+ 
+#ilustracao1 > #img:nth-child(3) {
+    height: 200px;
+    top: -415px;
+}
+ 
+/* Nossas Funcionalidades */
+
+#nossasFunc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr;
+    grid-template-areas: "imagens texto";
+}
+
+/* IMAGENS */
+.imagens{
+    display: flex;
+    align-items: center;
+    grid-area: imagens;
+}
+.imagens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+#scan,#tour{
+    height: 380px;
+    position: relative;
+    transition: 1s;
+}
+#home{
+    z-index: 3;
+    height: 420px;
+    margin-left: -75px;
+    transition: 1s;
+}
+#tour{
+    z-index: 2;
+    margin-left: -75px;
+}
+#scan{
+    z-index: 1;
+}
+
+/* TEXTOS */
+
+.textosFunc{
+    grid-area: texto;
+}
+
+.titulo {
+    width: fit-content;
+    font-size: 50px;
+    font-weight: 600;
+    left: 2rem;
+    position: relative;
+}
+.texto {
+    border-left: solid 5px #7C3939;
+    width: 36vw;
+    height: fit-content;
+    text-align: justify;
+    position: relative;
+    left: 1rem;
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.texto > h2 {
+    margin-top: 5vh;
+    font-weight: 600;
+}
+
+#textoHome{
+    position: relative;
+    opacity: 100%;
+    top: 29vh;
+    transition: 1s;
+}
+#textoScanner{
+    opacity: 0%;
+    transition: 1s;
+}
+#textoTour{
+    position: relative;
+    bottom:29vh;
+    opacity: 0%;
+    transition: 1s;
+}
+
+/* TRANSIÇÕES */
+#tour:hover{
+    z-index: 3;
+    height: 500px;
+    margin-left: 10px;
+}
+#scan:hover{
+    z-index: 3;
+    height: 500px;
+    margin-right: 80px;
+}
+#scan:hover~#home{
+    z-index: 2;
+}
+#scan:hover~#tour{
+    z-index: 1;
+}
+
+.imagens:has(#tour:hover) ~ .textosFunc #textoTour {
+    opacity: 100%;
+}
+.imagens:has(#tour:hover) ~ .textosFunc #textoHome {
+    opacity: 0;
+}
+
+.imagens:has(#scan:hover) ~.textosFunc #textoScanner{
+    opacity: 100%;
+}
+.imagens:has(#scan:hover) ~ .textosFunc #textoHome{
+    opacity: 0;
+}
+
+/*Sobre o App */
+ 
+#sobreApp{
+    background-color: #F5E0D4;
+    color: #000000;
+}
+ 
+#sobreApp h3{
+    width: 37vw;
+    height: fit-content;
+    font-size: 30px;
+    margin-left: 2.5rem;
+}
+ 
+#sobreApp a{
+    width: 450px;
+    color: #F5E0D4;
+}
+ 
+.txtBoxApp{
+    color: #7C3939;
+}
+ 
+.tituloApp{
+    font-weight: 600;
+    font-size: 70px;
+    width: 40vw;  
+    display: flex;
+}
+ 
+.imgRomero{
+    width: 768px;
+    height: 731px;
+    position: relative;
+    float: right;
+    bottom: 257px;
+}
+
+/*Sobre a Empresa */
+ 
+#sobreEmp {
+    background-image: url('../Resources/mockupVisus.png ');
+    background-size: cover;
+}
+
+#imgVisus{
+    width: 547.5px;
+    position:relative;
+    left: 55rem;
+    bottom: 200px;
+    border-radius: 30px;
+}
+
+#txtBoxEmp{
+    display: flex;
+    justify-content: center;
+}
+ 
+#emp {
+    color:#6DC83C;
+}
+ 
+.tituloEmp {
+    width: fit-content;
+    top: 120px;
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+    left: 8.7rem;
+}
+ 
+#info {
+    border-left: solid 5px #6DC83C;
+    width: 30vw;
+    height: fit-content;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    top: 170px;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+}
+ 
+#info > h2 {
+    margin-top: 5vh;
+    color: #6DC83C;
+    font-weight: 600;
+}
+ /* Integrantes */
+.integrantes{
+    z-index: 1;
+    height: 77vh;
+    width: 100vw;
+    background-color: #7C3939;
+}
+
+.visusIntegrantes{
+    height: 77vh;
+}
+
+.listaIntegrantes{
+    position: relative;
+    bottom: 70vh;
+    left: 67vw;
+    width: fit-content;
+    color: #F5E0D4;    
+}
+
+.listaIntegrantes img{
+    height: 120px;
+    width: fit-content;
+    box-shadow: 0px 0px 3px 0px #000000;
+    border-radius: 100px;
+    margin-left: 156px;
+}
+
+.listaIntegrantes ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.listaIntegrantes h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+@media(max-width:1536px){
+
+    .listaIntegrantes{
+        margin-left: 1.3vw;
+    }
+
+    .listaIntegrantes ul{
+        font-size: 15px;
+    }
+
+    .listaIntegrantes h1{
+        font-size: 25px;
+    }
+
+    .listaIntegrantes img{
+        margin-left: 4.6vw;
+        margin-top: 50px;
+    }
+}

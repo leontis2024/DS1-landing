@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(90deg, rgba(245,224,212,1) 30%, rgba(238,176,140,1) 100%);
+}
+
+#cadastro {
+    position: relative;
+    margin: auto;
+    top: 120px;
+    width: fit-content;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px black;
+    background-color: #7C3939;
+}
+
+#box {
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#formulario {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#formulario > form {
+    width: fit-content;
+}
+
+#titCadastro {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 40px;
+    color: #F5E0D4;
+    margin-bottom: 30px;
+}
+
+#finalizar {
+    width: 440px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+#submit {
+    width: 260px;
+    height: 45px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #F5E0D4;
+    color: #7C3939;
+    transition: 0.5s;
+}
+
+#submit:hover {
+    transform: scale(1.05);
+    font-size: 21px;
+    cursor: pointer;
+}
+
+#submit:active {
+    transform: scale(1);
+}
+
+label {
+    display: inline-block;
+    width: fit-content;
+    font-size: 22px;
+    color: #F5E0D4;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 400px;
+    height: 45px;
+    margin-bottom: 30px;
+    padding: 0px 10px;
+    font-size: 16px;
+    border: solid 2px black;
+    border-radius: 5px;
+}
