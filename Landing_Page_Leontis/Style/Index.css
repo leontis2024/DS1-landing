@@ -41,7 +41,7 @@
     border-radius: 40px;
     background-color: #7C3939;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
     margin: 20px 0;
 }
 
@@ -104,11 +104,25 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows:1fr;
-    grid-template-areas: "imagens texto";
+    grid-template-areas:
+    "titulo texto"
+    "imagens texto";
+}
+
+#tituloFunc {
+    width: 50vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 50px;
+    font-weight: 600;
+    grid-area: titulo;
 }
 
 /* IMAGENS */
 .imagens{
+    height: 80vh;
     display: flex;
     align-items: center;
     grid-area: imagens;
@@ -218,41 +232,57 @@
 }
 
 /*Sobre o App */
- 
-#sobreApp{
-    background-color: #F5E0D4;
-    color: #000000;
+
+#sobreApp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "desc imagem";
 }
- 
-#sobreApp h3{
-    width: 37vw;
-    height: fit-content;
-    font-size: 30px;
-    margin-left: 2.5rem;
-}
- 
-#sobreApp a{
-    width: 450px;
-    color: #F5E0D4;
-}
- 
-.txtBoxApp{
-    color: #7C3939;
-}
- 
-.tituloApp{
-    font-weight: 600;
-    font-size: 70px;
-    width: 40vw;  
+
+#txtBoxApp {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    grid-area: desc;
 }
- 
-.imgRomero{
-    width: 768px;
-    height: 731px;
-    position: relative;
-    float: right;
-    bottom: 257px;
+
+#tituloApp {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#subtitApp {
+    width: 45vw;
+    font-size: 28px;
+    text-align: center;
+}
+
+#botaoApp {
+    width: 450px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: #7C3939;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#botaoApp:hover {
+    transform: scale(1.02);
+}
+
+#imgRomero {
+    height: 100vh;
+    grid-area: imagem;
 }
 
 /*Sobre a Empresa */
