@@ -135,7 +135,7 @@
     margin-left: -75px;
 }
 #scan{
-    z-index: 1;
+    z-index: 1;
 }
 
 /* TEXTOS */
@@ -365,6 +365,6 @@
 
     .listaIntegrantes img{
         margin-left: 4.6vw;
-        margin-top: 50px;
+        margin-top: 50px;
     }
 }
