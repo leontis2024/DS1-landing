@@ -1,29 +1,30 @@
 /* Início */
 #inicio {
     background-color: #F5E0D4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "txtInicio imagemInicio";
 }
- 
+
 #txtBox {
-    width: 500px;
-    height: fit-content;
-    position: relative;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 170px;
-    left: 130px;
+    gap: 20px;
+    padding: 0 5vw;
+    grid-area: txtInicio;
 }
  
 #tituloIni {
-    padding: 0px 20px;
     text-align: center;
     font-size: 50px;
     font-weight: 600;
 }
  
 #descIni {
-    margin: 20px 0px;
     font-size: 30px;
     text-align: center;
 }
@@ -42,11 +43,6 @@
     background-color: #7C3939;
     cursor: pointer;
     transition: 0.5s;
-    margin: 20px 0;
-}
-
-#login {
-    font-size: 20px;
 }
  
 #botao:hover {
@@ -56,46 +52,50 @@
 #botao:active {
     transform: scale(1);
 }
+
+#login {
+    font-size: 20px;
+}
  
 #login > a {
     text-decoration: none;
     color: #7C3939;
 }
  
-#ilustracao1 {
-    height: 500px;
-    width: 500px;
-    float: right;
-    position: relative;
-    bottom: 230px;
-    right: 180px;
+#ilustracao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: imagemInicio;
 }
  
-#ilustracao1 > #img {
-    position: relative;
+#ilustracao > #img {
+    position: absolute;
     border-radius: 5px;
     box-shadow: black 5px 5px 15px 0px;
     transition: 0.5s;
 }
  
-#ilustracao1 > #img:hover {
+#ilustracao > #img:hover {
     transform: scale(1.01);
 }
  
-#ilustracao1 > #img:nth-child(1) {
+#ilustracao > #img:nth-child(1) {    
     height: 400px;
-    left: 50px;
+    top: 150px;
+    right: 300px;
 }
  
-#ilustracao1 > #img:nth-child(2) {
+#ilustracao > #img:nth-child(2) {
     height: 300px;
-    top: -250px;
-    left: 220px;
+    top: 280px;
+    right: 150px;
 }
  
-#ilustracao1 > #img:nth-child(3) {
+#ilustracao > #img:nth-child(3) {
     height: 200px;
-    top: -415px;
+    top: 450px;
+    right: 300px;
 }
  
 /* Nossas Funcionalidades */
@@ -105,8 +105,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows:1fr;
     grid-template-areas:
-    "titulo texto"
-    "imagens texto";
+    "tituloFunc textoFunc"
+    "imagensFunc textoFunc";
 }
 
 #tituloFunc {
@@ -117,7 +117,7 @@
     align-items: flex-end;
     font-size: 50px;
     font-weight: 600;
-    grid-area: titulo;
+    grid-area: tituloFunc;
 }
 
 /* IMAGENS */
@@ -125,7 +125,7 @@
     height: 80vh;
     display: flex;
     align-items: center;
-    grid-area: imagens;
+    grid-area: imagensFunc;
 }
 .imagens{
     display: flex;
@@ -149,13 +149,13 @@
     margin-left: -75px;
 }
 #scan{
-    z-index: 1;
+    z-index: 1;
 }
 
 /* TEXTOS */
 
 .textosFunc{
-    grid-area: texto;
+    grid-area: textoFunc;
 }
 
 .titulo {
