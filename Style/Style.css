@@ -5,10 +5,12 @@
  
 html {
     scroll-behavior: smooth;
-    }
+    height: 100%;
+}
     
 body {
     background-color: #F5E0D4;
+    height: 100%;
 }
 
 * {
@@ -16,12 +18,13 @@ body {
     font-weight: 500;
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
- 
+
 .assunto {
     width: 100vw;
     height: 100vh;
@@ -95,40 +98,39 @@ body {
 
 }
  
-#nossosCont>hr{
+#nossosCont > hr {
     height: 307.2px;
 }
  
-#imgFooter{
+#imgFooter {
     height: 102.2px;
     width: 107.52px;
 }
  
-.leontisFooter{
+#leontisFooter {
     color: #F5E0D4;
-    justify-self: left;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
  
-.linkIntegrantes{
+#linkIntegrantes {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
  
-.linkIntegrantes ul {
+#linkIntegrantes > ul {
     display: flex;
     flex-direction: row;
 }
  
-.linkIntegrantes ul li{
+#linkIntegrantes > ul > li {
     margin: 0.5vh 0.5vw 0.5vh 0;
     list-style: none;
 }
  
-.imagemFooter{
+#imagemFooter {
     background-image: url('../Resources/Instagram.png');
     background-size: cover;
     height: 48px;
@@ -136,12 +138,12 @@ body {
     transition: 0.5s ;
 }
  
-.imagemFooter:hover{
+#imagemFooter:hover {
     background-image: url('../Resources/InstagramHover.png');
     transition: 0.5s;
 }
  
-.mailFooter{
+#mailFooter {
     background-image: url('../Resources/Mail.png');
     background-size: cover;
     height: 48px;
@@ -149,23 +151,23 @@ body {
     transition: 0.5s ;
 }
  
-.mailFooter:hover{
+#mailFooter:hover {
     background-image: url('../Resources/MailHover.png');
     transition: 0.5s;
 }
  
-.linkIntegrantes > h1{
+#linkIntegrantes > h1 {
     color: #F5E0D4;
     font-size: 30px;
     transition: 0.5s;
 }
  
-.linksFooter{
+#linksFooter {
     color: #F5E0D4;
     transition: 0.5s;
 }
  
-.linksFooter > a{
+#linksFooter > a {
     color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -174,18 +176,18 @@ body {
     transition: 0.5s;
 }
  
-.linksFooter > a:hover{
+#linksFooter > a:hover {
     color: #F5E0D4 ;
     transition: 0.5s;
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
     #nossosCont{
         height: 35vh;
     }
 }
 
-@media (max-width:428px){
+@media (max-width:428px) {
     #nossosCont{
         height: 70vh;
         flex-direction: column;
