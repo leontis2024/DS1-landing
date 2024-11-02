@@ -3,23 +3,19 @@
 #comeco{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .tituloApp{
     font-size: 50px;
     width: 32.5vw;
-    top: 40vh;
-    left: 15vw;
-    position: relative;
 }
 
 .mockupLeontis{
-    position: relative;
-    height:70vh ;
+    height:50vh ;
     width: auto;
     border-radius: 50px;
-    top: 16vh;
-    left: 27vw;
 }
 
 /* O aplicativo */
@@ -60,7 +56,6 @@
     width: 41vw;
     flex-direction: column;
     font-size:17px;
-    position: relative;
     margin: 0px 100px 100px 150px;
 }
 
@@ -116,7 +111,8 @@
 .diferenciais{
     background-color: #282525;
     color: #F5DED4;
-    height: 110vh;
+    height: fit-content;
+    padding: 7vh;
     width: 100vw;
 }
  
@@ -125,8 +121,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    top: 3vh;
-    margin-bottom:2vw;
+    margin-top: 3vh;
 }
  
 .diferenciais h2{
@@ -135,11 +130,17 @@
 }
  
 .cardsDisplay{
-    margin: 30px 0px 100px 150px;
-    row-gap: 2.6vw;
+    margin: 2.6vw;
+    gap: 5.6vw;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(1,1fr);
+}
+
+.containerCards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
  
 .cards{
@@ -180,7 +181,7 @@
 
 #historia img{
     margin-top: 6vh;
-    margin-left: 1.5vw;
+    margin-left: 4.5vw;
     height: 57.5vh;
     width: auto;
     border-radius: 20px;
@@ -268,8 +269,8 @@
 
 /* Planos Futuros */
 #planosFuturos{
-    height: 70vh;
-    margin: 10vh 0;
+    height: fit-content;
+    padding: 7vh;
 }
 
 #planosFuturos h1{
@@ -295,13 +296,9 @@
         width: fit-content;
         height: fit-content;
     }
-
+    
     .assunto, #planosFuturos{
         height: fit-content;
-    }
-    
-    .diferenciais{
-        height: 170vh;
     }
 
     .diferenciais h1{
@@ -312,15 +309,13 @@
 
     #comeco{
         height: fit-content;
-        flex-direction: column;     
+        flex-direction: column;
     }
 
     .tituloApp{
         height: fit-content;
         width: 80vw;
-        left: 13vw;
-        top: 13vh;
-        margin-bottom: 100px;
+        margin-top: 150px;
     } 
 
     .mockupLeontis{
@@ -357,12 +352,6 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 4vw;
         margin: 5vh 0vw 5vh 0vw;
-    }
-
-    .containerCards{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
     }
 
     #historia, #culxTec, #susCult{
@@ -413,6 +402,11 @@
 
  @media (max-width:768px){
 
+    .mockupLeontis{
+        height: 40vh;
+        width: auto;
+    }
+
     .info, #txtBox{
         font-size: 15px;
     }
@@ -423,7 +417,7 @@
     }
 
     .diferenciais{
-        height: 250vh;
+        height: 200vh;
     }
 
     .diferenciais h2 {
@@ -434,6 +428,10 @@
 
     .titulo{
         font-size: 25px;
+    }
+
+    .containerCards{
+        justify-content: center ;
     }
 
     .cardsDisplay{
