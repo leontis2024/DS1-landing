@@ -1,4 +1,4 @@
-/* Início */
+/* Inicio */
 #inicio {
     background-color: #F5E0D4;
     display: grid;
@@ -19,6 +19,7 @@
 }
  
 #tituloIni {
+    margin-top: 100px;
     text-align: center;
     font-size: 50px;
     font-weight: 600;
@@ -69,33 +70,37 @@
     grid-area: imagemInicio;
 }
  
-#ilustracao > #img {
-    position: absolute;
+#ilustracao > .img {
+    position: relative;
+    height: auto;    
+}
+ 
+#ilustracao > .img > img {
+    width: 130%;
     border-radius: 5px;
     box-shadow: black 5px 5px 15px 0px;
     transition: 0.5s;
 }
- 
-#ilustracao > #img:hover {
+
+#ilustracao > .img > img:hover {
     transform: scale(1.01);
+    transition: 0.5s;
 }
  
-#ilustracao > #img:nth-child(1) {    
-    height: 400px;
-    top: 150px;
-    right: 300px;
+#ilustracao > .img:nth-child(1) {    
+    width: 100%;
+    transform: translateX(50%)
+}   
+ 
+#ilustracao > .img:nth-child(2) {
+    width: 80%;
+    transform: translate(40%,30%)
+
 }
  
-#ilustracao > #img:nth-child(2) {
-    height: 300px;
-    top: 280px;
-    right: 150px;
-}
- 
-#ilustracao > #img:nth-child(3) {
-    height: 200px;
-    top: 450px;
-    right: 300px;
+#ilustracao > .img:nth-child(3) {
+    width: 100%;
+    transform: translate(-150%,100%);
 }
  
 /* Nossas Funcionalidades */
@@ -426,4 +431,16 @@
         height: auto;
     }   
 
+}
+
+@media(max-width:768px){
+
+    #txtBox {
+        width: 90vw;
+    }
+
+    #ilustracao {
+        display: none;
+    }
+    
 }

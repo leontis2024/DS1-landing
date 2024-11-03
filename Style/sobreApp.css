@@ -112,7 +112,7 @@
     background-color: #282525;
     color: #F5DED4;
     height: fit-content;
-    padding: 7vh;
+    padding: 7vh 0px;
     width: 100vw;
 }
  
@@ -270,7 +270,7 @@
 /* Planos Futuros */
 #planosFuturos{
     height: fit-content;
-    padding: 7vh;
+    padding: 7vh 0px;
 }
 
 #planosFuturos h1{
@@ -416,10 +416,6 @@
         width: auto;
     }
 
-    .diferenciais{
-        height: 200vh;
-    }
-
     .diferenciais h2 {
         display: flex;
         justify-self:center;
@@ -437,4 +433,4 @@
     .cardsDisplay{
         grid-template-columns: 1fr;
     }
- }
+}
