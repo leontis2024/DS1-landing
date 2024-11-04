@@ -19,7 +19,7 @@
 }
 
 /* O aplicativo */
-#aplicativo{
+.aplicativo{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +30,7 @@
     width: 100vw;
 }
 
-#aplicativo h1{
+.aplicativo h1{
     display: flex;
     text-align: center;
     font-weight: 600;
@@ -241,7 +241,7 @@
  
 #imagemOds{
     position: relative;
-    top: 30vh;
+    top: 20vh;
     left: 25vw;
     width: 400px;
     height: 400px;
@@ -295,7 +295,7 @@
         margin-top: 150px;
     } 
 
-    #aplicativo h1{
+    .aplicativo h1{
         font-size: 48px
     }
     
