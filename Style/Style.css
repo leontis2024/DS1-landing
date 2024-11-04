@@ -181,12 +181,23 @@ body {
 }
 
 @media (max-width:768px) {
+    
+    #links > a {
+        font-size: 17px;
+    }
+    
     #nossosCont{
         height: 35vh;
     }
 }
 
-@media (max-width:428px) {
+@media (max-width:428px) {  
+
+    #links > a {
+        font-size: 11px;
+        margin-left: 20px;
+    }
+
     #nossosCont{
         height: 70vh;
         flex-direction: column;

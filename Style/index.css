@@ -1,10 +1,11 @@
-/* Inicio */
+/* Início */
 #inicio {
     background-color: #F5E0D4;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
     "txtInicio imagemInicio";
+    height: fit-content;
 }
 
 #txtBox {
@@ -126,32 +127,29 @@
 }
 
 /* IMAGENS */
-.imagens{
+#imagens{
     height: 80vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 50vw;
     grid-area: imagensFunc;
 }
-.imagens{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50vw;
-}
+
 #scan,#tour{
-    height: 380px;
+    height: 23vw;
     position: relative;
     transition: 1s;
 }
 #home{
     z-index: 3;
-    height: 420px;
-    margin-left: -75px;
+    height: 27vw;
+    margin-left: -55px;
     transition: 1s;
 }
 #tour{
     z-index: 2;
-    margin-left: -75px;
+    margin-left: -55px;
 }
 #scan{
     z-index: 1;
@@ -159,8 +157,14 @@
 
 /* TEXTOS */
 
-.textosFunc{
+#textosFunc{
     grid-area: textoFunc;
+    display: flex;
+    align-items: center;
+}
+
+#textosFunc > div {
+    position: relative;
 }
 
 .titulo {
@@ -175,8 +179,6 @@
     width: 36vw;
     height: fit-content;
     text-align: justify;
-    position: relative;
-    left: 1rem;
     font-size: 20px;
     padding: 20px;
     display: flex;
@@ -190,59 +192,66 @@
 #textoHome{
     position: relative;
     opacity: 100%;
-    top: 29vh;
+    /* top: 29vh; */
     transition: 1s;
 }
 #textoScanner{
-    opacity: 0%;
+    position: relative;
+    display: none;
     transition: 1s;
+    /* top: -14vh; */
 }
 #textoTour{
     position: relative;
-    bottom:29vh;
-    opacity: 0%;
+    /* bottom: 57vh; */
+    display: none;
     transition: 1s;
 }
 
 /* TRANSIÇÕES */
 #tour:hover{
     z-index: 3;
-    height: 500px;
+    height: 35vw;
     margin-left: 10px;
 }
+
 #scan:hover{
     z-index: 3;
-    height: 500px;
+    height: 35vw;
     margin-right: 80px;
 }
+
 #scan:hover~#home{
     z-index: 2;
 }
+
 #scan:hover~#tour{
     z-index: 1;
 }
 
-.imagens:has(#tour:hover) ~ .textosFunc #textoTour {
-    opacity: 100%;
-}
-.imagens:has(#tour:hover) ~ .textosFunc #textoHome {
-    opacity: 0;
+#imagens:has(#tour:hover) ~ .textosFunc #textoTour {
+    display: block;
 }
 
-.imagens:has(#scan:hover) ~.textosFunc #textoScanner{
-    opacity: 100%;
+#imagens:has(#tour:hover) ~ .textosFunc #textoHome {
+    display: none;
 }
-.imagens:has(#scan:hover) ~ .textosFunc #textoHome{
-    opacity: 0;
+
+#imagens:has(#scan:hover) ~.textosFunc #textoScanner{
+    display: block;
+}
+
+#imagens:has(#scan:hover) ~ .textosFunc #textoHome{
+    display: none;
 }
 
 /*Sobre o App */
 
 #sobreApp {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "desc imagem";
+    background-image: url("../Resources/fotoRomero.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #txtBoxApp {
@@ -251,11 +260,14 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    grid-area: desc;
+    grid-area: descSobreApp;
+    height: 100%;
+    background-color: #2b2a2a70;
+    color: white;
 }
 
 #tituloApp {
-    font-size: 50px;
+    font-size: 47px;
     font-weight: 600;
 }
 
@@ -266,12 +278,12 @@
 }
 
 #botaoApp {
-    width: 450px;
+    width: 380px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     text-decoration: none;
     border: 2px solid black;
@@ -288,22 +300,24 @@
 #imgRomero {
     width: 50vw;
     height: 100vh;
-    grid-area: imagem;
+    grid-area: imagemSobreApp;
 }
 
 /*Sobre a Empresa */
 
 #sobreEmp{
+    width: 100vw;
+    min-height: 50vw;
+    height: auto;
     background-image: url('../Resources/mockupVisus.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
 }
 
 #txtBoxEmp {
-    width: 35vw;
-    margin-left: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -311,18 +325,22 @@
 }
 
 #tituloEmp {
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 600;
     color: #6DC83C;
+  
 }
  
 #info {
     border-left: solid 5px #6DC83C;
     height: fit-content;
+    padding: 20px;
+    text-align: justify;
     color: whitesmoke;
+    font-size: 2vh;
 }
 
-.visusIntegrantes{
+#visusIntegrantes{
     display: flex;
     width: auto;
     height: 74vh;
@@ -334,10 +352,12 @@
     margin-top: 5vh;
     color: #6DC83C;
     font-weight: 600;
+    
 }
 
+
 /* Integrantes */
-.integrantes{
+#integrantes{
     display: grid;
     z-index: 1;
     width: 100vw;
@@ -348,7 +368,7 @@
     grid-template-areas: "imagem texto";
 }
 
-.listaIntegrantes{
+#listaIntegrantes{
     grid-area: texto;
     width: fit-content;
     display: flex;
@@ -359,33 +379,33 @@
     color: black;
 }
 
-.listaIntegrantes img{
+#listaIntegrantes img{
     height: 10vw;
     width: fit-content;
     box-shadow: 0px 0px 3px 0px #000000;
     border-radius: 100px;  
 }
 
-.listaIntegrantes ul{
+#listaIntegrantes ul{
     list-style: none;
     display: flex;
     flex-direction: column; 
     align-items: center;
 }
 
-.listaIntegrantes li {
+#listaIntegrantes li {
     text-align: center;
     font-size: 1.2vw;
     color: #F5E0D4;
 }
 
-.listaIntegrantes h1{
+#listaIntegrantes h1{
     font-size: 2.4vw;
     font-weight: 600;
     color: #F5E0D4;
 }
 
-.visusIntegrantes{
+#visusIntegrantes{
     grid-area: imagem;
     width: auto;
     height: 77.5vh;
@@ -393,7 +413,9 @@
 
 @media(max-width:1535px){
 
-    .integrantes{
+    /* /Integrantes/ */
+
+    #integrantes{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
@@ -401,7 +423,7 @@
         "texto";
     }
 
-    .listaIntegrantes{
+    #listaIntegrantes{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -410,23 +432,23 @@
         height: 70vh;
     }
 
-    .listaIntegrantes li {
+    #listaIntegrantes li {
         font-size: 2vh;
         color: #F5E0D4;
     }
 
-    .listaIntegrantes h1{
+    #listaIntegrantes h1{
         font-size: 4vh;
         text-align: center;
         color: #F5E0D4;
     }
     
-    .listaIntegrantes img{
+    #listaIntegrantes img{
         width: fit-content;
         height: 15vh;
     }       
 
-    .visusIntegrantes{
+    #visusIntegrantes{
         width: 100vw;
         height: auto;
     }   
@@ -435,6 +457,8 @@
 
 @media(max-width:768px){
 
+    /* /Inicio/ */
+
     #txtBox {
         width: 90vw;
     }
@@ -442,5 +466,128 @@
     #ilustracao {
         display: none;
     }
+
+    #tituloIni {
+        font-size: 40px;
+    }
+     
+    #descIni {
+        font-size: 20px;
+    }
+
+    /* /Funcionalidades/ */
+
+
+    #nossasFunc {
+        display: block;
+        height: fit-content;
+    }
+
+    #tituloFunc {
+        width: 100vw;
+        margin-bottom: 30px;
+    }
+
+    #imagens {
+        display: none;
+    }
+
+    #textosFunc {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+
+    #textosFunc > div{
+        width: 95vw;
+        margin-left: 4vw;
+    }
+
+    .texto {
+        width: 72vw;
+    }
+
+    #textoHome, #textoTour, #textoScanner {
+        display: block;
+    }
+
+
+    /* /Sobre o App/ */
     
+    #imgRomero {
+        display: none;
+    }
+
+    /* /Sobre a empresa/ */
+
+    #sobreEmp {
+        min-height: 70vw;
+    }
+
+    #tituloEmp {
+        font-size: 40px;
+    }
+
+    #info > h2 {
+        margin-top: 1vh;
+    }
+
+    #info > h3 {
+        font-size: 16px;
+    }
+
+    
+}
+
+@media(max-width:425px){ 
+
+    /* /Sobre o App/ */
+
+    #sobreApp {
+        height: 70vh;
+    }
+
+    #tituloApp {
+        text-align: center;
+        width: 100vw;
+        font-size: 40px;
+    }
+
+    #subtitApp{
+        width: 100vw;
+    }
+
+    #botaoApp {
+        width: 200px;
+        font-size: 11px;
+    }
+
+    /* /Funcionalidades/ */
+
+    #tituloFunc {
+        font-size: 40px;
+    }
+
+    .titulo {
+        font-size: 34px;
+    }
+
+    .texto {
+        font-size: 16px;
+    }
+
+    /* /Sobre a empresa/ */
+
+    #tituloEmp {
+        font-size: 30px;
+    }
+
+    #info > h2 {
+        font-size: 16px;
+        margin-top: 1vh;
+    }
+
+    #info > h3 {
+        font-size: 14px;
+    }
 }
