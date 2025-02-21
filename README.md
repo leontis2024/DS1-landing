@@ -30,10 +30,10 @@ cd .\DS1-landing\
 
 ## 🎨Ferramentas Utilizadas
 
-![html-5](https://github.com/user-attachments/assets/961486fc-cdf9-4e61-9e5b-f707158530ec)
+![HTML)](https://github.com/user-attachments/assets/05de332e-b5e7-45b0-98dc-e8837fe93bda)
 Html
 
-![css-3](https://github.com/user-attachments/assets/42244c71-9459-47ad-a960-403ed6b999fb)
+![CSS)](https://github.com/user-attachments/assets/d36fbbae-1316-4853-a8c3-3cf9c520ac95)
 CSS
 
 ## 👨‍🎨Autores 
